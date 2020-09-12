@@ -1,6 +1,12 @@
+/*
+ * Name : TD2_main.c
+ * Date of creation : 13/09/2020
+ * Date of last update : 13/09/2020
+ * author(s) : zhou
+ */
 #include <stdlib.h>
 #include <stdio.h>
-#include "lib/SSL.h"
+#include "lib/SLL.h"
 #include "lib/CLL.h"
 #include "lib/DLL.h"
 

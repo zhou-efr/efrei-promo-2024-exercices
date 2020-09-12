@@ -1,3 +1,9 @@
+/*
+ * Name : DLL.h
+ * Date of creation : 13/09/2020
+ * Date of last update : 13/09/2020
+ * author(s) : zhou
+ */
 #ifndef TD_EN_C_DLL_H
 #define TD_EN_C_DLL_H
 

@@ -1,6 +1,12 @@
+/*
+ * Name : TD1_main.c
+ * Date of creation : 12/09/2020
+ * Date of last update : 13/09/2020
+ * author(s) : zhou
+ */
 #include <stdio.h>
 #include <stdlib.h>
-#include "lib/SSL.h"
+#include "lib/SLL.h"
 #include "lib/CLL.h"
 
 int main() {
@@ -51,7 +57,7 @@ int main() {
     to_str(a);
     printf("}\n");
 
-    concatenateSSL(a, reinforcement);
+    concatenateSLL(a, reinforcement);
 
     printf("\nII - 2 iterative: remove an element from a SLL\n\t'a'={");
     to_str(a);
@@ -61,7 +67,7 @@ int main() {
     printf("}\n");
 
     reinforcement = initSLL(2);
-    concatenateSSL(a, reinforcement);
+    concatenateSLL(a, reinforcement);
 
     printf("\nII - 3 : reverse a SLL\n\t'a'={");
     to_str(a);
@@ -73,11 +79,11 @@ int main() {
     printf("\nII - 4 : switch element in SLL\n\t'a'={");
     to_str(a);
     printf("}\n\tswitching element at position %d and %d\n\t'a'={", switched[0], switched[1]);
-    switchInSSL(&a, switched[0], switched[1]);
+    switchInSLL(&a, switched[0], switched[1]);
     to_str(a);
     printf("}\n");
 
-    switchInSSL(&a, switched[0], switched[1]);
+    switchInSLL(&a, switched[0], switched[1]);
     reinforcement = initSLL(2);
     reinforcement->data = 3;
     reinforcement->next->data = 4;

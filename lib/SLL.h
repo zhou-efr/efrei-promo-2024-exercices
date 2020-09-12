@@ -1,10 +1,16 @@
+/*
+ * Name : SLL.h
+ * Date of creation : 12/09/2020
+ * Date of last update : 13/09/2020
+ * author(s) : zhou
+ */
 #ifndef TD_EN_C_SSL
 #define TD_EN_C_SSL
 
-typedef struct SSL
+typedef struct SLL
 {
     int data;
-    struct SSL* next;
+    struct SLL* next;
 }Node;
 
 
@@ -12,7 +18,7 @@ typedef struct SSL
 
 Node* initSLL(int size);
 
-void userFulfillSSL(Node* node);
+void userFulfillSLL(Node* node);
 
 void to_str(Node* node);
 
@@ -52,7 +58,7 @@ void iterative_element_removal(Node** node, int value);
 Node* revert(Node* node);
 
 // ex 2.4
-void switchInSSL(Node** node, int index1, int index2);
+void switchInSLL(Node** node, int index1, int index2);
 
 // ex 3.1
 Node* ascendingFusion(Node* a, Node* b);
@@ -66,7 +72,7 @@ int isDuplicates(Node* node);
 void reversed_to_str(Node* node);
 
 // ex 1.2
-void concatenateSSL(Node* destination, Node* target);
+void concatenateSLL(Node* destination, Node* target);
 
 // ex 1.4
 Node* array_to_SLL(int* target, int size);

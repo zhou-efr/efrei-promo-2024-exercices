@@ -1,4 +1,10 @@
-#include "SSL.h"
+/*
+ * Name : simpleLinkedList.c
+ * Date of creation : 12/09/2020
+ * Date of last update : 13/09/2020
+ * author(s) : zhou
+ */
+#include "SLL.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -18,13 +24,13 @@ Node* initSLL(int size)
     return star;
 }
 
-void userFulfillSSL(Node* node)
+void userFulfillSLL(Node* node)
 {
     if(node != 0)
     {
         printf("enter a value :");
         scanf("%d", &(node->data));
-        userFulfillSSL(node->next);
+        userFulfillSLL(node->next);
     }
 }
 
@@ -173,7 +179,7 @@ Node* revert(Node* node)
     }
 }
 
-void switchInSSL(Node** node, int index1, int index2)
+void switchInSLL(Node** node, int index1, int index2)
 {
     if (*node != 0)
     {
@@ -306,14 +312,14 @@ void reversed_to_str(Node* node)
     }
 }
 
-void concatenateSSL(Node* destination, Node* target)
+void concatenateSLL(Node* destination, Node* target)
 {
     if(destination->next == 0)
     {
         destination->next = target;
     }else
     {
-        concatenateSSL(destination->next, target);
+        concatenateSLL(destination->next, target);
     }
 }
 
@@ -378,7 +384,7 @@ void internal_sort_SLL(Node** node, int begin, int end)
      for (int i = begin; i <= end; ++i) {
         if (get_index(*node, i)->data <= p)
         {
-            switchInSSL(node, pos, i);
+            switchInSLL(node, pos, i);
             pos++;
         }
      }

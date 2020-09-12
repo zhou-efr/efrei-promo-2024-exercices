@@ -1,3 +1,9 @@
+/*
+ * Name : doubleLinkedList.c
+ * Date of creation : 13/09/2020
+ * Date of last update : 13/09/2020
+ * author(s) : zhou
+ */
 #include "DLL.h"
 #include <stdio.h>
 #include <stdlib.h>
