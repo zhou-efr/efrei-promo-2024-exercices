@@ -44,7 +44,7 @@ add_executable(TD_en_C SSL.h simpleLinkedList.c TD2_main.c circledLinkedList.c C
 ## ERREURS
 Si vous rencontrer une erreur, un crash, un exercice qui ne correspond pas à la consigne, vous êtes invités à me le signaler à `killian.zhou@efrei.net`. Veuillez à y préciser la nature du problème, la portion de code concerné et le/les fichiers correspondants. Merci.
 
-### Index
+## Index
 Retrouvez [ici](https://github.com/gundamzhou/L2-C/blob/master/index.md) l'index des exercices ainsi que leurs descriptions. [page moodle](https://www.myefrei.fr/moodle/course/view.php?id=6870) Int EFREI de White Pepper S.A.S. est mis à disposition selon les termes de la licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International. Les autorisations au-delà du champ de cette licence peuvent être obtenues à mailto://franck.lepoivre@platypus.academy
 
 12/09/2020
