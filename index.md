@@ -1,12 +1,12 @@
 # Table Of Contents
 [<strong>TD 1</strong>](#TD-1)
-- [1 Introduction level](#1.1-Introduction-level)
-- [2 Medium Level](#1.2-Medium-Level)
-- [3 Advanced level](#1.3-Advanced-level)
+- [1 Introduction level](#11-Introduction-level)
+- [2 Medium Level](#12-Medium-Level)
+- [3 Advanced level](#13-Advanced-level)
 
 [<strong>TD 2</strong>](#TD-2)
-- [1 Introduction level](#2.1-Introduction-level)
-- [2 Medium Level](#2.2-Medium-Level)
+- [1 Introduction level](#21-Introduction-level)
+- [2 Medium Level](#22-Medium-Level)
 ## TD 1
 ### 1.1 Introduction level
 - 1.1 Get the size of a list <br/>
