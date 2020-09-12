@@ -9,8 +9,8 @@ Zhou.
 
 ## Sommaire
 
-- [Affichage des différents TDs](https://github.com/gundamzhou/L2-C/blob/master/README.md#affichage-des-diff%C3%A9rents-tds)
-- [Erreurs](https://github.com/gundamzhou/L2-C/blob/master/README.md#erreurs)
+- [Affichage des différents TDs](#affichage-des-diff%C3%A9rents-tds)
+- [Erreurs](#erreurs)
 
 ## Affichage des différents TDs
 Les fonctions des TDs sont dans les fichiers qui leurs correspondent, exemple : toutes les fonctions touchant aux simple linked lists sont dans les fichier `SLL.h` et `simpleLinkedList.c` indépendamment du TD dans lequel elles sont demandées.
