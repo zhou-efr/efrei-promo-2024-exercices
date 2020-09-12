@@ -9,8 +9,8 @@ Zhou.
 
 ## Sommaire
 
-- Affichage des différents TDs
-- Erreurs
+- [Affichage des différents TDs][#affichage-des-différents-tds]
+- [Erreurs][#erreurs]
 
 ## Affichage des différents TDs
 Les fonctions des TDs sont dans les fichiers qui leurs correspondent, exemple : toutes les fonctions touchant aux simple linked lists sont dans les fichier `SLL.h` et `simpleLinkedList.c` indépendamment du TD dans lequel elles sont demandées.
