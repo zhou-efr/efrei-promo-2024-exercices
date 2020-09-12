@@ -12,19 +12,22 @@
 - 1.1 Get the size of a list <br/>
 Create two algorithms, an iterative one and a recursive one, returning the length of a Singly Linked List (SLL).
 [line 60](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c) 
-
+<br/>iterative one at [line 409](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
 - 1.2 Going through part of a list <br/>
 Create two algorithms, an iterative one and a recursive one, returning the position of the first occurence of a given value in a list. If the given value is not found, return -1. The first Element has a position of 1.
 [line 71](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
+<br/>iterative one at [line 421](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
 
 - 1.3 Count occurrences in a list <br/>
 Create two algorithms, an iterative one and a recursive one, returning the number of occurrences of a given element.
 [line 85](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
+<br/>iterative one at [line 437](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
 
 - 1.4 Sum elements in a list <br/>
 Create two algorithms, an iterative one and a recursive one, returning the sum of every data in a SLL containing integers. <br/>
 <strong>Example</strong> : if the list to be processed is {5 → 12 → 42 → 55 → 42}, your algorithm will return 156.
 [line 98](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
+<br/>iterative one at [line 452](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
 
 - 1.5 Determine if a list is in ascending order<br/>
 Create an algorithm returning true when the values inside a given SLL are in strictly ascending order, and false otherwise.
@@ -38,6 +41,7 @@ Create an algorithm that adds a given element to a given position on a SLL. If t
 - 2.2 Remove an element from a list <br/>
 Create two algorithms, an iterative one and a recursive one, removing all occurrences of a given element in a SLL.
 [line 137](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
+<br/>iterative one at [line 464](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
 
 - 2.3 Reverse a SLL <br/>
 Create two algorithms, an iterative one and a recursive one, that reverse the order of a SLL. Do not create a new list, so no memory allocation should be used.

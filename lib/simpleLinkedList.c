@@ -405,3 +405,83 @@ int* SLL_to_array(Node* node)
 
     return ar;
 }
+
+int iterative_len(Node* node)
+{
+    Node* buffer = node;
+    int i = 0;
+    while(buffer != 0)
+    {
+        buffer = buffer->next;
+        i++;
+    }
+    return i;
+}
+
+int iterative_first_occurrence_position(Node* node, int value)
+{
+    Node* buffer = node;
+    int i = 0;
+    while(buffer != 0)
+    {
+        if(buffer->data == value)
+        {
+            return i;
+        }
+        buffer = buffer->next;
+        i++;
+    }
+    return -1;
+}
+
+int iterative_occurrence_count(Node* node, int value)
+{
+    Node* buffer = node;
+    int i = 0;
+    while(buffer != 0)
+    {
+        if(buffer->data == value)
+        {
+            i++;
+        }
+        buffer = buffer->next;
+    }
+    return i;
+}
+
+int iterative_sum(Node* node)
+{
+    Node* buffer = node;
+    int i = 0;
+    while(buffer != 0)
+    {
+        i += buffer->data;
+        buffer = buffer->next;
+    }
+    return i;
+}
+
+void iterative_element_removal(Node** node, value)
+{
+    Node* buffer = *node, * temp = 0;
+    int i = 0;
+
+    while(buffer->next != 0)
+    {
+        if(buffer->next->data == value)
+        {
+            temp = buffer->next->next;
+            free(buffer->next);
+            buffer->next = buffer->next->next;
+        }
+        buffer = buffer->next;
+    }
+
+    if ((*node)->data == value)
+    {
+        buffer = *node;
+        *node = (*node)->next;
+        free(buffer);
+        buffer = *node;
+    }
+}
