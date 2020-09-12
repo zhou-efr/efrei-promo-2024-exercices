@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "SSL.h"
-#include "CLL.h"
+#include "lib/SSL.h"
+#include "lib/CLL.h"
 
 int main() {
     printf("*----------------------------------------*\n");

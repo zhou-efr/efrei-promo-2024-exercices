@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "SSL.h"
-#include "CLL.h"
-#include "DLL.h"
+#include "lib/SSL.h"
+#include "lib/CLL.h"
+#include "lib/DLL.h"
 
 int main()
 {
