@@ -1,5 +1,14 @@
+# Table Of Contents
+[<strong>TD 1</strong>](#TD-1)
+- [1 Introduction level](#1.1-Introduction-level)
+- [2 Medium Level](#1.2-Medium-Level)
+- [3 Advanced level](#1.3-Advanced-level)
+
+[<strong>TD 2</strong>](#TD-2)
+- [1 Introduction level](#2.1-Introduction-level)
+- [2 Medium Level](#2.2-Medium-Level)
 ## TD 1
-### 1 Introduction level
+### 1.1 Introduction level
 - 1.1 Get the size of a list <br/>
 Create two algorithms, an iterative one and a recursive one, returning the length of a Singly Linked List (SLL).
 [line 60](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c) 
@@ -21,7 +30,7 @@ Create two algorithms, an iterative one and a recursive one, returning the sum o
 Create an algorithm returning true when the values inside a given SLL are in strictly ascending order, and false otherwise.
 [line 109](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
 
-### 2 Medium Level
+### 1.2 Medium Level
 - 2.1 Add an element to a list <br/>
 Create an algorithm that adds a given element to a given position on a SLL. If this position is higher than the length of the list, add it at the end. If the given position is 0 or less, add it at the beginning of the list.
 [line 125](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
@@ -38,7 +47,7 @@ Create two algorithms, an iterative one and a recursive one, that reverse the or
 Create an algorithm switching two elements at given positions. Switch the elements, not just the data they contain. Be careful, don’t forget the case where the list only has two elements !
 [line 176](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
 
-### 3 Advanced level
+### 1.3 Advanced level
 - 3.1 Merge two ascending ordered lists <br/>
     Create an algorithm taking two ascending ordered lists as parameters, and returning a single list, in an ascending order.
 Do not create a new list, so no memory allocation should be used. <br/>
@@ -55,7 +64,7 @@ Create an algorithm returning true if the given SLL has doubles, and false other
 [line 280](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
 
 ## TD2
-### 1 Introduction level
+### 2.1 Introduction level
 - 1.1 Go through a list backwards <br/>
 Create an algorithm (recursive or iterative, as you wish), displaying the values of a SLL from the last element to the first.
 [line 300](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
@@ -80,7 +89,7 @@ Create an algorithm taking as arguments a list, and as argument by reference an 
 <strong>Note</strong> : your list does not return any value, it just processes the given data. 
 [line 334](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
 
-### 2 Medium level
+### 2.2 Medium level
 - 2.1 Add an array of integers to a list <br/>
 Create an algorithm adding the values of a given array of integers, at a given position, to a SLL. If the given position is bigger than the size of the list, add the elements at the end of the list. If the given position is 0, add them at the start of the list.
 Adapt your algorithm to do the same for a DLL. <br/>
