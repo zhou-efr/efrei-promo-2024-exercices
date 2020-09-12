@@ -426,7 +426,7 @@ int iterative_first_occurrence_position(Node* node, int value)
     {
         if(buffer->data == value)
         {
-            return i;
+            return i+1;
         }
         buffer = buffer->next;
         i++;
@@ -461,7 +461,7 @@ int iterative_sum(Node* node)
     return i;
 }
 
-void iterative_element_removal(Node** node, value)
+void iterative_element_removal(Node** node, int value)
 {
     Node* buffer = *node, * temp = 0;
     int i = 0;
@@ -472,9 +472,10 @@ void iterative_element_removal(Node** node, value)
         {
             temp = buffer->next->next;
             free(buffer->next);
-            buffer->next = buffer->next->next;
+            buffer->next = temp;
+        }else{
+            buffer = buffer->next;
         }
-        buffer = buffer->next;
     }
 
     if ((*node)->data == value)
@@ -482,6 +483,5 @@ void iterative_element_removal(Node** node, value)
         buffer = *node;
         *node = (*node)->next;
         free(buffer);
-        buffer = *node;
     }
 }

@@ -15,12 +15,24 @@ int main() {
     to_str(a);
     printf("}\n\tlen(a) = %d\n", len(a));
 
+    printf("\nI - 1 iterative: return the size of a simple linked list (aka SLL) :\n\tlet a = {");
+    to_str(a);
+    printf("}\n\tlen(a) = %d\n", iterative_len(a));
+
     printf("\nI - 2 : first occurrence of a value in a SLL\n\tThe first occurrence of 0 in 'a' is at position %d\n",
            first_occurrence(a, researched));
 
-    printf("\nI - 3 : number of occurence in a SLL\n\t There's %d times 0 in 'a'\n", number_of(a, researched));
+    printf("\nI - 2 iterative : first occurrence of a value in a SLL\n\tThe first occurrence of 0 in 'a' is at position %d\n",
+           iterative_first_occurrence_position(a, researched));
+
+    printf("\nI - 3 : number of occurence in a SLL\n\t There's %d times %d in 'a'\n", number_of(a, researched), researched);
+
+    printf("\nI - 3 iterative : number of occurence in a SLL\n\t There's %d times %d in 'a'\n",
+           iterative_occurrence_count(a, researched), researched);
 
     printf("\nI - 4 : data's sum of a SLL\n\tsum(a) = %d\n", sum(a));
+
+    printf("\nI - 4 iterative : data's sum of a SLL\n\tsum(a) = %d\n", iterative_sum(a));
 
     printf("\nI - 5 : is a SLL in ascending order\n\t'a' %s in ascending order\n", (ascending(a))?"is":"isn't");
 
@@ -39,6 +51,16 @@ int main() {
     to_str(a);
     printf("}\n");
 
+    concatenateSSL(a, reinforcement);
+
+    printf("\nII - 2 iterative: remove an element from a SLL\n\t'a'={");
+    to_str(a);
+    printf("}\n\tdeletion of %d\n\t'a'={", to_delete);
+    iterative_element_removal(&a, to_delete);
+    to_str(a);
+    printf("}\n");
+
+    reinforcement = initSLL(2);
     concatenateSSL(a, reinforcement);
 
     printf("\nII - 3 : reverse a SLL\n\t'a'={");
@@ -72,6 +94,6 @@ int main() {
 
     printf("\nIII - 3 : detect if a SLL contains doubles\n\t'a' %scontains doubles\n", (isDuplicates(a))?"":"does not ");
 
-    free(a);
+    free_SLL(a);
     return 0;
 }

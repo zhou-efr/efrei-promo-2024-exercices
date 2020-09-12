@@ -24,15 +24,19 @@ Node* get_index(Node* node, int index);
 
 // ex 1.1
 int len(Node* node);
+int iterative_len(Node* node);
 
 // ex 1.2
 int first_occurrence(Node* node, int value);
+int iterative_first_occurrence_position(Node* node, int value);
 
 // ex 1.3
 int number_of(Node* node, int value);
+int iterative_occurrence_count(Node* node, int value);
 
 //ex 1.4
 int sum(Node* node);
+int iterative_sum(Node* node);
 
 // ex 1.5
 int ascending(Node* node);
@@ -42,6 +46,7 @@ void insert(Node* node, Node* nNode, int position);
 
 // ex 2.2
 void delete(Node* node, int value);
+void iterative_element_removal(Node** node, int value);
 
 // ex 2.3
 Node* revert(Node* node);
