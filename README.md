@@ -36,7 +36,7 @@ project(TD_en_C C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(TD_en_C SSL.h simpleLinkedList.c TD1_main.c circledLinkedList.c CLL.h doubleLinkedList.c DLL.h)
+add_executable(TD_en_C TD1_main.c SSL.h simpleLinkedList.c circledLinkedList.c CLL.h doubleLinkedList.c DLL.h)
 ```
 
 On change `TD1_main.c` en `TD2_main.c` dans la ligne `add_executable( ... )`.
@@ -47,7 +47,7 @@ project(TD_en_C C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(TD_en_C SSL.h simpleLinkedList.c TD2_main.c circledLinkedList.c CLL.h doubleLinkedList.c DLL.h)
+add_executable(TD_en_C TD2_main.c SSL.h simpleLinkedList.c circledLinkedList.c CLL.h doubleLinkedList.c DLL.h)
 ```
 Puis lancez le build (`maj + F10` ou <em>Run</em>-><em>Run \<project-name></em>).
 
@@ -72,4 +72,4 @@ Si vous rencontrer une erreur, un crash, un exercice qui ne correspond pas à la
 ## Index
 Retrouvez [ici](https://github.com/gundamzhou/L2-C/blob/master/index.md) l'index des exercices ainsi que leurs descriptions (cliquer sur le numéro de ligne pour être renvoyé sur le fichier contenant l'exercercice). [page moodle](https://www.myefrei.fr/moodle/course/view.php?id=6870)<br/> licence description : Int EFREI de White Pepper S.A.S. est mis à disposition selon les termes de la licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International. Les autorisations au-delà du champ de cette licence peuvent être obtenues à mailto://franck.lepoivre@platypus.academy
 
-12/09/2020
+13/09/2020
