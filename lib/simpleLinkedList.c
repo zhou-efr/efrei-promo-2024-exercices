@@ -10,6 +10,13 @@
 
 Node* initSLL(int size)
 {
+    /*
+     * initSLL :
+     * * size : integer which correspond to the size of the created SLL
+     *
+     * for loop which create nodes, start at 1 since the last one doesn't have to initialize a next node.
+     */
+
     Node* star = (Node*)malloc(sizeof(Node));
     Node* buffer = star;
     for (int i = 1; i < size; i++) {
@@ -26,6 +33,13 @@ Node* initSLL(int size)
 
 void userFulfillSLL(Node* node)
 {
+    /*
+     * userFulfillSLL :
+     * * node : the first node of the SLL we want to fill
+     *
+     * let the user fulfill an initialized SLL with value entered on a terminal.
+     */
+
     if(node != 0)
     {
         printf("enter a value :");
@@ -36,6 +50,13 @@ void userFulfillSLL(Node* node)
 
 void to_str(Node* node)
 {
+    /*
+     * to_str :
+     * * node : the first node of the SLL we want to fill
+     *
+     * display in a single line, without going to next line, all the element of a SLL with a semicolon.
+     */
+
     if(node != 0)
     {
         printf(" %d;", node->data);
@@ -45,6 +66,13 @@ void to_str(Node* node)
 
 void free_SLL(Node* node)
 {
+    /*
+     * free_SLL :
+     * * node : the first node of the SLL we want to fill
+     *
+     * free an SLL.
+     */
+
     if(node != 0)
     {
         free_SLL(node->next);
@@ -54,6 +82,14 @@ void free_SLL(Node* node)
 
 Node* get_index(Node* node, int index)
 {
+    /*
+     * get_index :
+     * * node : the first node of the SLL we want to fill
+     * * index : the position from 0 in the SLL of the researched node
+     *
+     * recursively search a node and return it.
+     */
+
     if (node == 0) {
         return 0;
     }else if (index == 0){
@@ -65,6 +101,13 @@ Node* get_index(Node* node, int index)
 
 int len(Node* node)
 {
+    /*
+     * len :
+     * node : the first node of the SLL we want to fill
+     *
+     * recursively return the size of a SLL.
+     */
+
     if (node->next == 0)
     {
         return 1;
@@ -76,6 +119,15 @@ int len(Node* node)
 
 int first_occurrence(Node* node, int value)
 {
+    /*
+     * first_occurrence :
+     * * node : the first node of the SLL we want to fill
+     * * value : integer corresponding to the searched value
+     *
+     * recursively count the first position where is 'value'. If it isn't in the list then the function reach the end of
+     * the SLL then we return -1 which is keep thanks to a ternary condition.
+     */
+
     if (node == 0)
     {
         return -1;
@@ -90,6 +142,14 @@ int first_occurrence(Node* node, int value)
 
 int number_of(Node* node, int value)
 {
+    /*
+     * number_of :
+     * * node : the first node of the SLL we want to fill
+     * * value : integer corresponding to the searched value
+     *
+     * recursively count the number of node which the data equal to 'value'.
+     */
+
     if (node == 0)
     {
         return 0;
@@ -103,6 +163,13 @@ int number_of(Node* node, int value)
 
 int sum(Node* node)
 {
+    /*
+     * sum :
+     * * node : the first node of the SLL we want to fill
+     *
+     * recursively count the number of nodes in a SLL.
+     */
+
     if(node == 0)
     {
         return 0;
@@ -114,6 +181,13 @@ int sum(Node* node)
 
 int ascending(Node* node)
 {
+    /*
+     * ascending :
+     * * node : the first node of the SLL we want to fill
+     *
+     * Check if a SLL is in ascending order.
+     */
+
     Node* buffer = node;
 
     while (buffer->next != 0)
@@ -130,6 +204,15 @@ int ascending(Node* node)
 
 void insert(Node* node, Node* nNode, int position)
 {
+    /*
+     * insert :
+     * * node : the first node of the SLL we want to fill
+     * * nNode : the node which we want to insert
+     * * position : the position where we want to insert the new node
+     *
+     * recursively insert a node.
+     */
+
     if(position <= 1 || node->next == 0)
     {
         Node* buffer = node->next;
@@ -142,6 +225,15 @@ void insert(Node* node, Node* nNode, int position)
 
 void delete(Node* node, int value)
 {
+    /*
+     * delete :
+     * * node : the first node of the SLL we want to fill
+     * * value : the value of nodes we want to remove
+     *
+     * recursively remove all the nodes which have as data 'value'. NB : when find a node to delete, it delete it and
+     * test again the current node (since it check the node after the current one).
+     */
+
     if (node != 0)
     {
         if (node->data == value)
@@ -167,6 +259,15 @@ void delete(Node* node, int value)
 
 Node* revert(Node* node)
 {
+    /*
+     * revert :
+     * * node : the first node of the SLL we want to fill
+     *
+     * reverse a SLL. NB : don't forget to set the node next value to 0 even if it will be changed because the last one
+     * (which was the first one) will still point to it's previous next and it will give a loop (the last one pointing
+     * to a node which point on itself).
+     */
+
     if(node->next == 0)
     {
         return node;
@@ -181,6 +282,17 @@ Node* revert(Node* node)
 
 void switchInSLL(Node** node, int index1, int index2)
 {
+    /*
+     * switchInSLL :
+     * * node : the first node of the SLL we want to fill
+     * * index1 : the position of the first node
+     * * index2 : the position of the second node
+     *
+     * switch two node in a SLL. A little bit stodgy but interesting. NB : when switching first change the value of next
+     * in previous nodes since if index 1 and index 2 are consecutive buffer_first will point on itself (or smthng like
+     * that)
+     */
+
     if (*node != 0)
     {
         int first, second;
@@ -199,20 +311,13 @@ void switchInSLL(Node** node, int index1, int index2)
             return;
         }
 
-
+        // prevent the case of fist < 0
         if (first < 0) { first = 0;}
-
 
         while(second >= 0 && buffer != 0)
         {
             if (second == 0)
             {
-                /*
-                 * buffer
-                 * buffer_previous
-                 * buffer_first
-                 * buffer_first_previous may = 0
-                 * */
 
                 buffer_previous->next = buffer_first;
                 if (buffer_first_previous == 0)
@@ -227,15 +332,19 @@ void switchInSLL(Node** node, int index1, int index2)
                 buffer->next = buffer_next;
             }else if (second == 1 || buffer->next->next == 0)
             {
+                // save the node before the switched one
                 buffer_previous = buffer;
+                // setting second to 1 to prevent the case where second > len(SLL)
                 second = 1;
             }
 
             if (first == 0)
             {
+                // save the switched node
                 buffer_first = buffer;
             }else if (first == 1)
             {
+                // save the node before the switched one
                 buffer_first_previous = buffer;
             }
 
@@ -248,6 +357,15 @@ void switchInSLL(Node** node, int index1, int index2)
 
 Node* ascendingFusion(Node* a, Node* b)
 {
+    /*
+     * ascendingFusion :
+     * * a : the first node of the SLL
+     * * b : the first node of the second SLL
+     *
+     * merge two SLL, already ordered, in the ascending order and return the first node of the new SLL. NB : compare
+     * firsts nodes first for a simpler loop.
+     */
+
     if (a == 0){return b;
     }else if (b == 0){return a;}
 
@@ -285,6 +403,13 @@ Node* ascendingFusion(Node* a, Node* b)
 
 int isDuplicates(Node* node)
 {
+    /*
+     * isDuplicates :
+     * * node : the first node of the SLL
+     *
+     * return true if there's two time a value in a SLL, else return false.
+     */
+
     Node* buffer = node, * buffer2 = 0;
 
     while (buffer->next != 0)
@@ -305,6 +430,13 @@ int isDuplicates(Node* node)
 
 void reversed_to_str(Node* node)
 {
+    /*
+     * to_str :
+     * * node : the first node of the SLL we want to fill
+     *
+     * display in a single line, without going to next line, all the element of a SLL with a semicolon from the end.
+     */
+
     if (node != 0)
     {
         reversed_to_str(node->next);
@@ -314,6 +446,14 @@ void reversed_to_str(Node* node)
 
 void concatenateSLL(Node* destination, Node* target)
 {
+    /*
+     * concatenateSLL :
+     * * destination : SLL which will be extended
+     * * target : extension
+     *
+     * add a SLL at the end of another.
+     */
+
     if(destination->next == 0)
     {
         destination->next = target;
@@ -325,6 +465,14 @@ void concatenateSLL(Node* destination, Node* target)
 
 Node* array_to_SLL(int* target, int size)
 {
+    /*
+     * array_to_SLL :
+     * * target : array of int (pointer to an int)
+     * * size : size of the array
+     *
+     * convert an array of integer into a SLL and return it's first node.
+     */
+
     Node * start = (Node*)malloc(sizeof(Node)), * buffer = start;
 
     for (int i = 0; i < size; ++i)
@@ -339,6 +487,14 @@ Node* array_to_SLL(int* target, int size)
 
 void split(Node* start, Node* cut)
 {
+    /*
+     * split :
+     * * start : the first node of the SLL
+     * * cut : the first node of the new SLL
+     *
+     * split a SLL into two SLL.
+     */
+
     if (start != 0)
     {
         if (start->next == cut){
@@ -351,6 +507,14 @@ void split(Node* start, Node* cut)
 
 void insert_array_to_SLL(Node** destination, int* target, int size, int pos)
 {
+    /*
+     * insert_array_to_SLL :
+     * * destination : first node of the SLL
+     * * target : array of int to insert
+     * * size : size of the array
+     * * pos : position where insert
+     */
+
     Node* buffer = array_to_SLL(target, size), * next = 0, * runner = *destination;
     if (pos <= 0)
     {
@@ -374,6 +538,16 @@ void insert_array_to_SLL(Node** destination, int* target, int size, int pos)
 
 void internal_sort_SLL(Node** node, int begin, int end)
 {
+    /*
+     * internal_sort_SLL :
+     * * node : pointer to the first node of the SLL, it's a pointer 'cause the first node could change.
+     * * begin : start index of the list
+     * * end : end index of the list
+     *
+     * sort in ascending order a SLL. This function use the algorithms commonly named "quicksort", see on internet for
+     * more details about how it work.
+     */
+
      if (begin > end)
      {
          return;
@@ -394,11 +568,25 @@ void internal_sort_SLL(Node** node, int begin, int end)
 
 void sort_SLL(Node** node)
 {
+    /*
+     * sort_SLL :
+     * * node :  pointer to the first node of the SLL, it's a pointer 'cause the first node could change.
+     *
+     * user side function to sort a SLL.
+     */
+
     internal_sort_SLL(node, 0, len(*node) - 1);
 }
 
 int* SLL_to_array(Node* node)
 {
+    /*
+     * SLL_to_array :
+     * * node : the first node of the SLL
+     *
+     * convert an SLL into a dynamic array of integer.
+     */
+
     int size = len(node);
     int* ar = (int*)calloc(size, sizeof(int));
     Node* buffer = node;
@@ -414,6 +602,13 @@ int* SLL_to_array(Node* node)
 
 int iterative_len(Node* node)
 {
+    /*
+     * len :
+     * node : the first node of the SLL we want to fill
+     *
+     * return the size of a SLL.
+     */
+
     Node* buffer = node;
     int i = 0;
     while(buffer != 0)
@@ -426,6 +621,14 @@ int iterative_len(Node* node)
 
 int iterative_first_occurrence_position(Node* node, int value)
 {
+    /*
+     * first_occurrence :
+     * * node : the first node of the SLL we want to fill
+     * * value : integer corresponding to the searched value
+     *
+     *  count the first position where is 'value'.
+     */
+
     Node* buffer = node;
     int i = 0;
     while(buffer != 0)
@@ -442,6 +645,14 @@ int iterative_first_occurrence_position(Node* node, int value)
 
 int iterative_occurrence_count(Node* node, int value)
 {
+    /*
+     * number_of :
+     * * node : the first node of the SLL we want to fill
+     * * value : integer corresponding to the searched value
+     *
+     * count the number of node which the data equal to 'value'.
+     */
+
     Node* buffer = node;
     int i = 0;
     while(buffer != 0)
@@ -457,6 +668,13 @@ int iterative_occurrence_count(Node* node, int value)
 
 int iterative_sum(Node* node)
 {
+    /*
+     * sum :
+     * * node : the first node of the SLL we want to fill
+     *
+     * count the number of nodes in a SLL.
+     */
+
     Node* buffer = node;
     int i = 0;
     while(buffer != 0)
@@ -469,6 +687,14 @@ int iterative_sum(Node* node)
 
 void iterative_element_removal(Node** node, int value)
 {
+    /*
+     * delete :
+     * * node : the first node of the SLL we want to fill
+     * * value : the value of nodes we want to remove
+     *
+     * remove all the nodes which have as data 'value'.
+     */
+
     Node* buffer = *node, * temp = 0;
     int i = 0;
 
@@ -494,6 +720,13 @@ void iterative_element_removal(Node** node, int value)
 
 void iterative_reverse(Node** node)
 {
+    /*
+     * revert :
+     * * node : the first node of the SLL we want to fill
+     *
+     * reverse a SLL.
+     */
+
     Node* buffer = *node, * temps[] = {buffer->next, 0};
 
     while(temps[0] != 0)
