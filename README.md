@@ -72,4 +72,4 @@ Si vous rencontrer une erreur, un crash, un exercice qui ne correspond pas à la
 ## Index
 Retrouvez [ici](https://github.com/gundamzhou/L2-C/blob/master/index.md) l'index des exercices ainsi que leurs descriptions (cliquer sur le numéro de ligne pour être renvoyé sur le fichier contenant l'exercercice). [page moodle](https://www.myefrei.fr/moodle/course/view.php?id=6870)<br/> licence description : Int EFREI de White Pepper S.A.S. est mis à disposition selon les termes de la licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International. Les autorisations au-delà du champ de cette licence peuvent être obtenues à mailto://franck.lepoivre@platypus.academy
 
-13/09/2020
+14/09/2020
