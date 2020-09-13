@@ -1,7 +1,7 @@
 /*
  * Name : doubleLinkedList.c
- * Date of creation : 13/09/2020
- * Date of last update : 13/09/2020
+ * Date of creation : 12/09/2020
+ * Date of last update : 12/09/2020
  * author(s) : zhou
  */
 #include "DLL.h"
@@ -32,12 +32,13 @@ DoubleNode* init_double_linked_list(int size)
 void print_double_linked_list(DoubleNode* start)
 {
     DoubleNode* current_node = start;
+    printf("{");
     while (current_node != 0)
     {
-        printf("%d; ", current_node->data);
+        printf(" %d;", current_node->data);
         current_node = current_node->next;
     }
-    printf("\n");
+    printf("}");
 }
 
 void free_double_linked_list(DoubleNode* start)
@@ -69,13 +70,13 @@ void push_object_start(DoubleNode** start, int value)
     }
 }
 
-void push_object_end(DoubleNode* start, int value)
+void push_object_end(DoubleNode** start, int value)
 {
     DoubleNode* new_node = (DoubleNode*)malloc(sizeof(DoubleNode));
-    DoubleNode* last_node = start;
-    if (start == 0)
+    DoubleNode* last_node = *start;
+    if (*start == 0)
     {
-        start = new_node;
+        *start = new_node;
         new_node->next = 0;
         new_node->data = value;
         new_node->previous = 0;
@@ -89,14 +90,14 @@ void push_object_end(DoubleNode* start, int value)
     }
 }
 
-void insert_object(DoubleNode *start, int value, int position_from_0)
+void insert_object(DoubleNode **start, int value, int position_from_0)
 {
     int buffer_position = 0;
     DoubleNode* new_node = (DoubleNode*)malloc(sizeof(DoubleNode));
-    DoubleNode* current_node = start;
-    if (start == 0)
+    DoubleNode* current_node = *start;
+    if (*start == 0)
     {
-        start = new_node;
+        *start = new_node;
         new_node->next = 0;
         new_node->data = value;
         new_node->previous = 0;
@@ -104,7 +105,7 @@ void insert_object(DoubleNode *start, int value, int position_from_0)
     else {
         if (position_from_0 == 0)
         {
-            push_object_start(&start, value);
+            push_object_start(start, value);
         }
         else {
             while (current_node->next != 0 && buffer_position < position_from_0-1)
