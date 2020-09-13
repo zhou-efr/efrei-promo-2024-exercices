@@ -27,7 +27,7 @@ Les fonctions des TDs sont dans les fichiers qui leurs correspondent, exemple : 
 Cependant, chaque TD possède son propre main avec toutes les fonctions qui y sont demandées, exemple : `TD1_main.c` contient toutes les fonctions du premier TD.
 
 ### Run on CLion
-Si vous souhaiter changer le main qui est build (sur CLion, qui peut être obtenu gratuitement via la licence étudiante) changer le nom du main dans `CMakeList.c`, exemple :
+Si vous souhaiter changer le main qui est build (sur CLion, qui peut être obtenu gratuitement via la licence étudiante) changer le nom du main dans `CMakeList.txt`, exemple :
 
 pour passer du TD 1 au TD 2 :
 ```c
