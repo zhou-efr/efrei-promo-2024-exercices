@@ -1,7 +1,7 @@
 /*
  * Name : SLL.h
  * Date of creation : 12/09/2020
- * Date of last update : 13/09/2020
+ * Date of last update : 14/09/2020
  * author(s) : zhou
  */
 #ifndef TD_EN_C_SSL
@@ -56,6 +56,7 @@ void iterative_element_removal(Node** node, int value);
 
 // ex 2.3
 Node* revert(Node* node);
+void iterative_reverse(Node** node);
 
 // ex 2.4
 void switchInSLL(Node** node, int index1, int index2);

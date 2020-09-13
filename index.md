@@ -46,6 +46,7 @@ Create two algorithms, an iterative one and a recursive one, removing all occurr
 - 2.3 Reverse a SLL <br/>
 Create two algorithms, an iterative one and a recursive one, that reverse the order of a SLL. Do not create a new list, so no memory allocation should be used.
 [line 162](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
+<br/>iterative one at [line 495](https://github.com/gundamzhou/L2-C/blob/master/lib/simpleLinkedList.c)
 
 - 2.4 Switch two elements in a SLL <br/>
 Create an algorithm switching two elements at given positions. Switch the elements, not just the data they contain. Be careful, don’t forget the case where the list only has two elements !

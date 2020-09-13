@@ -1,7 +1,7 @@
 /*
  * Name : TD1_main.c
  * Date of creation : 12/09/2020
- * Date of last update : 13/09/2020
+ * Date of last update : 14/09/2020
  * author(s) : zhou
  */
 #include <stdio.h>
@@ -76,6 +76,13 @@ int main() {
     to_str(a);
     printf("}\n");
 
+    printf("\nII - 3 iterative : reverse a SLL\n\t'a'={");
+    to_str(a);
+    printf("}\n\treversion\n\t'a'={");
+    iterative_reverse(&a);
+    to_str(a);
+    printf("}\n");
+
     printf("\nII - 4 : switch element in SLL\n\t'a'={");
     to_str(a);
     printf("}\n\tswitching element at position %d and %d\n\t'a'={", switched[0], switched[1]);
@@ -83,7 +90,6 @@ int main() {
     to_str(a);
     printf("}\n");
 
-    switchInSLL(&a, switched[0], switched[1]);
     reinforcement = initSLL(2);
     reinforcement->data = 3;
     reinforcement->next->data = 4;

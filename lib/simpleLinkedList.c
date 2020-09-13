@@ -1,7 +1,7 @@
 /*
  * Name : simpleLinkedList.c
  * Date of creation : 12/09/2020
- * Date of last update : 13/09/2020
+ * Date of last update : 14/09/2020
  * author(s) : zhou
  */
 #include "SLL.h"
@@ -10,7 +10,7 @@
 
 Node* initSLL(int size)
 {
-    Node* star = (Node*)malloc(sizeof(Node));;
+    Node* star = (Node*)malloc(sizeof(Node));
     Node* buffer = star;
     for (int i = 1; i < size; i++) {
         buffer->data = 0;
@@ -78,7 +78,7 @@ int first_occurrence(Node* node, int value)
 {
     if (node == 0)
     {
-        return 1;
+        return -1;
     }else if(node->data == value){
         return 1;
     }else
@@ -490,4 +490,19 @@ void iterative_element_removal(Node** node, int value)
         *node = (*node)->next;
         free(buffer);
     }
+}
+
+void iterative_reverse(Node** node)
+{
+    Node* buffer = *node, * temps[] = {buffer->next, 0};
+
+    while(temps[0] != 0)
+    {
+        temps[0] = buffer->next;
+        buffer->next = temps[1];
+        temps[1] = buffer;
+        buffer = (temps[0])?temps[0]:buffer;
+    }
+
+    *node = buffer;
 }
