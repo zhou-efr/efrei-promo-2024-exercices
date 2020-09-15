@@ -190,9 +190,14 @@ int ascending(Node* node)
 
     Node* buffer = node;
 
+    if(buffer == 0)
+    {
+        return 1;
+    }
+    
     while (buffer->next != 0)
     {
-        if (buffer->data < buffer->next->data)
+        if (buffer->data > buffer->next->data)
         {
             return 0;
         }
