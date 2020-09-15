@@ -237,6 +237,8 @@ void delete(Node* node, int value)
      *
      * recursively remove all the nodes which have as data 'value'. NB : when find a node to delete, it delete it and
      * test again the current node (since it check the node after the current one).
+     *
+     * /!\ error if the 1st node == value, will be corrected soon
      */
 
     if (node != 0)
