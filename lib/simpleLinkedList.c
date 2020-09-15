@@ -110,10 +110,10 @@ int len(Node* node)
 
     if (node == 0)
     {
-        return 1;
+        return 0;
     }else
     {
-        return len(node->next);
+        return len(node->next) + 1;
     }
 }
 
