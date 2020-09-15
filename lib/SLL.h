@@ -62,7 +62,7 @@ void iterative_reverse(Node** node);
 void switchInSLL(Node** node, int index1, int index2);
 
 // ex 3.1
-Node* ascendingFusion(Node* a, Node* b);
+Node* ascendingFusion(Node* l1, Node* l2);
 
 // ex 3.3
 int isDuplicates(Node* node);

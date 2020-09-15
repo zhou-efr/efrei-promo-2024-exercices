@@ -362,21 +362,23 @@ void switchInSLL(Node** node, int index1, int index2)
     }
 }
 
-Node* ascendingFusion(Node* a, Node* b)
+Node* ascendingFusion(Node* l1, Node* l2)
 {
     /*
      * ascendingFusion :
-     * * a : the first node of the SLL
-     * * b : the first node of the second SLL
+     * * l1 : the first node of the SLL
+     * * l2 : the first node of the second SLL
      *
      * merge two SLL, already ordered, in the ascending order and return the first node of the new SLL. NB : compare
-     * firsts nodes first for a simpler loop.
+     * firsts nodes first for l1 simpler loop.
      */
 
-    if (a == 0){return b;
-    }else if (b == 0){return a;}
+    if (l1 == 0){return l2;
+    }else if (l2 == 0){return l1;
+    }else if(l1 == l2){return l1;
+    }
 
-    Node* buffer_a = a, * buffer_b = b, * buffer_c = 0;
+    Node* buffer_a = l1, * buffer_b = l2, * buffer_c = 0;
 
     if (buffer_a->data <= buffer_b->data)
     {
@@ -405,7 +407,7 @@ Node* ascendingFusion(Node* a, Node* b)
     if (buffer_a == 0 && buffer_b != 0){buffer_c->next = buffer_b;
     }else if (buffer_b == 0 && buffer_a != 0){buffer_c->next = buffer_a;}
 
-    return (a->data <= b->data)?a:b;
+    return (l1->data <= l2->data) ? l1 : l2;
 }
 
 int isDuplicates(Node* node)
