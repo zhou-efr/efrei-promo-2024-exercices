@@ -207,7 +207,7 @@ int ascending(Node* node)
     return 1;
 }
 
-void insert(Node* node, Node* nNode, int position)
+void insert(Node* l, Node* nNode, int pos)
 {
     /*
      * insert :
@@ -217,14 +217,16 @@ void insert(Node* node, Node* nNode, int position)
      *
      * recursively insert a node.
      */
-
-    if(position <= 1 || node->next == 0)
+    if(l != NULL)
     {
-        Node* buffer = node->next;
-        node->next = nNode;
-        nNode->next = buffer;
-    }else{
-        insert(node->next, nNode, position-1);
+        if(*l == NULL || pos <= 1)
+        {
+            Element* buffer = *l;
+            (*l) = nNode;
+            (*l)->next = buffer;
+        }else{
+            insert(&((*l)->next), n, pos-1);
+        }
     }
 }
 
