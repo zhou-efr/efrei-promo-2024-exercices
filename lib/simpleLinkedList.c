@@ -108,12 +108,12 @@ int len(Node* node)
      * recursively return the size of a SLL.
      */
 
-    if (node->next == 0)
+    if (node == 0)
     {
         return 1;
     }else
     {
-        return len(node->next) + 1;
+        return len(node->next);
     }
 }
 
