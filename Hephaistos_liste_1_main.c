@@ -70,7 +70,7 @@ int main()
 
     printf("\n3.2 Determiner si une liste contient un cycle\n\tc %s un cycle\n", (list_has_cycle(c))?"contient":"ne contient pas");
 
-    printf("\n3.3 Determiner si une liste contient des doublons\n\tc %s des doublons\n", (list_has_doubles(c))?"contient":"ne contient pas");
+    printf("\n3.3 Determiner si une liste contient des doublons\n\tc %s des doublons\n", (list_has_doubles_BL(c))?"contient":"ne contient pas");
 
     free_SLL(c);
     return 0;

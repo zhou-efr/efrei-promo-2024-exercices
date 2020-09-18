@@ -19,5 +19,6 @@ int list_has_cycle(Element* l);
 
 // 3.3
 int list_has_doubles(Element* l);
+int list_has_doubles_BL(Element* l);
 
 #endif //TD_EN_C_THREE_H

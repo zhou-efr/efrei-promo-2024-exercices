@@ -84,3 +84,20 @@ int list_has_doubles(Element* l)
     }
     return 0;
 }
+
+int list_has_doubles_BL(Element* l)
+{
+    /*
+     * author : Benjamin Lesieux
+     */
+
+    if (l == NULL) return 0;
+
+    for (List temp = l; temp != NULL; temp = temp->next) {
+        for (List second = temp->next; second != NULL; second = second->next) {
+            if (temp->data == second->data) return 1;
+        }
+    }
+
+    return 0;
+}
