@@ -14,6 +14,7 @@ Zhou.
 - [Erreurs](#erreurs)
 - [Index hephaistos](#index-hephaistos)
 - [Index des exercices](#index)
+- [Contributeurs](#contributeurs)
 
 ## Installation
 ### CLion
@@ -77,7 +78,13 @@ Les exercices de la plateforme hephaistos sont present dans le dossier du même 
 ## Index
 Retrouvez [ici](https://github.com/gundamzhou/L2-C/blob/master/index.md) l'index des exercices ainsi que leurs descriptions (cliquer sur le numéro de ligne pour être renvoyé sur le fichier contenant l'exercercice). [page moodle](https://www.myefrei.fr/moodle/course/view.php?id=6870)<br/> licence description : Int EFREI de White Pepper S.A.S. est mis à disposition selon les termes de la licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International. Les autorisations au-delà du champ de cette licence peuvent être obtenues à mailto://franck.lepoivre@platypus.academy
 
-14/09/2020
+## Contributeurs :
+
+ZHOU Killian
+LEBIHAN Guerric
+LESIEUX Benjamin
+
+18/09/2020
 
 Nota Bene:
 Je ne pretends pas avoir les meilleures solutions.
