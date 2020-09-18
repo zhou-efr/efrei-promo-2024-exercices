@@ -392,12 +392,12 @@ Node* ascendingFusionGL(Node* l1, Node* l2)
             {
                 if(l1->data < l2->data)
                 {
-                    l1->next = list_merge_asc(l1->next,l2);
+                    l1->next = ascendingFusionGL(l1->next,l2);
                     return l1;
                 }
                 else
                 {
-                    l2->next = list_merge_asc(l1,l2->next);
+                    l2->next = ascendingFusionGL(l1,l2->next);
                     return l2;
                 }
             }
