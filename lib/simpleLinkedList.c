@@ -225,7 +225,7 @@ void insert(Node** l, Node* nNode, int pos)
             (*l) = nNode;
             (*l)->next = buffer;
         }else{
-            insert(&((*l)->next), n, pos-1);
+            insert(&((*l)->next), nNode, pos-1);
         }
     }
 }
