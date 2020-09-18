@@ -46,7 +46,7 @@ int main() {
     to_str(a);
     printf("}\n\tinsertion\n\t'a'={");
     to_insert->data = 1;
-    insert(a, to_insert, insert_position);
+    insert(&a, to_insert, insert_position);
     to_str(a);
     printf("}\n");
 

@@ -48,7 +48,7 @@ int iterative_sum(Node* node);
 int ascending(Node* node);
 
 // ex 2.1
-void insert(Node* node, Node* nNode, int position);
+void insert(Node** node, Node* nNode, int position);
 
 // ex 2.2
 void delete(Node* node, int value);

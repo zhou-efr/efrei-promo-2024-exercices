@@ -207,7 +207,7 @@ int ascending(Node* node)
     return 1;
 }
 
-void insert(Node* l, Node* nNode, int pos)
+void insert(Node** l, Node* nNode, int pos)
 {
     /*
      * insert :
@@ -221,7 +221,7 @@ void insert(Node* l, Node* nNode, int pos)
     {
         if(*l == NULL || pos <= 1)
         {
-            Element* buffer = *l;
+            Node* buffer = *l;
             (*l) = nNode;
             (*l)->next = buffer;
         }else{
@@ -232,6 +232,8 @@ void insert(Node* l, Node* nNode, int pos)
 
 void delete(Node* node, int value)
 {
+    // /!\ don't work, will be corrected soon
+
     /*
      * delete :
      * * node : the first node of the SLL we want to fill
