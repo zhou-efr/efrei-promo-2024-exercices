@@ -207,7 +207,7 @@ int ascending(Node* node)
     return 1;
 }
 
-void insert(Node* node, Node* nNode, int position)
+void insert(Node* l, Node* nNode, int pos)
 {
     /*
      * insert :
@@ -217,14 +217,16 @@ void insert(Node* node, Node* nNode, int position)
      *
      * recursively insert a node.
      */
-
-    if(position <= 1 || node->next == 0)
+    if(l != NULL)
     {
-        Node* buffer = node->next;
-        node->next = nNode;
-        nNode->next = buffer;
-    }else{
-        insert(node->next, nNode, position-1);
+        if(*l == NULL || pos <= 1)
+        {
+            Element* buffer = *l;
+            (*l) = nNode;
+            (*l)->next = buffer;
+        }else{
+            insert(&((*l)->next), n, pos-1);
+        }
     }
 }
 
@@ -371,6 +373,40 @@ void switchInSLL(Node** l, int pos1, int pos2)
     }
 }
 
+Node* ascendingFusionGL(Node* l1, Node* l2)
+{
+    /*
+     * author : guerric lebihan
+     * ascendingFusion :
+     * * l1 : the first node of the SLL
+     * * l2 : the first node of the second SLL
+     *
+     * merge two SLL, already ordered, in the ascending order and return the first node of the new SLL. NB : compare
+     * firsts nodes first for l1 simpler loop.
+     */
+        if(l1 != NULL)
+        {
+            if(l2 != NULL)
+            {
+                if(l1->data < l2->data)
+                {
+                    l1->next = list_merge_asc(l1->next,l2);
+                    return l1;
+                }
+                else
+                {
+                    l2->next = list_merge_asc(l1,l2->next);
+                    return l2;
+                }
+            }
+            return l1;
+        }
+        if(l2 != NULL)
+        {
+            return l2;
+        }
+        return NULL;
+    }   
 Node* ascendingFusion(Node* l1, Node* l2)
 {
     /*
