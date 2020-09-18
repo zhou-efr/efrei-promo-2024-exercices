@@ -16,6 +16,7 @@ Element* list_merge_asc(Element* l1, Element* l2);
 
 // 3.2
 int list_has_cycle(Element* l);
+int list_has_cycle_KS(Element* l);
 
 // 3.3
 int list_has_doubles(Element* l);

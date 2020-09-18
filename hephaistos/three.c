@@ -85,6 +85,35 @@ int list_has_doubles(Element* l)
     return 0;
 }
 
+int list_has_cycle_KS(Element* l)
+{
+    /*
+     * author : Kylian Sauvee
+     *
+     * if you want to know more about the algorithm search : Algorithme du lievre et de la tortue
+     */
+
+    List fast, slow = l;
+
+    if (l == NULL) return 0;
+    else {
+        while (1) {
+
+            slow = slow->next;
+
+            if (fast->next != NULL) fast = fast->next->next;
+            else return 0;
+
+
+            if (slow == NULL || fast == NULL) return 0;
+
+            if (slow == fast) return 1;
+        }
+    }
+
+    return 0;
+}
+
 int list_has_doubles_BL(Element* l)
 {
     /*
