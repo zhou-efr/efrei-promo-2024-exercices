@@ -287,78 +287,87 @@ Node* revert(Node* node)
     }
 }
 
-void switchInSLL(Node** node, int index1, int index2)
+void switchInSLL(Node** l, int pos1, int pos2)
 {
     /*
      * switchInSLL :
      * * node : the first node of the SLL we want to fill
-     * * index1 : the position of the first node
-     * * index2 : the position of the second node
+     * * index1 : the position of the first node FROM 0
+     * * index2 : the position of the second node FROM 0
      *
      * switch two node in a SLL. A little bit stodgy but interesting. NB : when switching first change the value of next
      * in previous nodes since if index 1 and index 2 are consecutive buffer_first will point on itself (or smthng like
      * that)
      */
 
-    if (*node != 0)
+    if(*l == 0){return;}
+    if(pos1 == pos2){return;}
+
+    int first = (pos1 > pos2)?pos2:pos1;
+    int second = (pos1 > pos2)?pos1:pos2;
+    int size = 0;
+
+    Node* buffer = *l;
+
+    while(buffer != 0){buffer = buffer->next;size++;}
+    buffer=(*l);
+    size--;
+
+    if(first < 0)
+        first = 0;
+
+    if(second > size)
+        second = size;
+
+    Node* ante = 0;
+    Node* pos_1 = 0;
+    Node* post = 0;
+    Node* pos_2 = 0;
+
+    int i = 0;
+
+    while(second >= 0)
     {
-        int first, second;
-        Node* buffer = *node, * buffer_first = 0, * buffer_next = 0,
-        * buffer_previous = 0, * buffer_first_previous = 0;
+        //check first
+        if (first == 1)
+            ante = buffer;
+        else if (first == 0)
+            pos_1 = buffer;
 
-        if (index1 < index2)
+        //check second
+        if (second == 1)
+            post = buffer;
+        else if( second == 0)
+            pos_2 = buffer;
+
+        // I know that it possible to fusion this and the previous condition
+        // but it clearer like that
+        if(pos_2 != 0)
         {
-            first = index1;
-            second = index2;
-        }else if (index1 > index2)
+            // replacing the next of the next before pos1
+            if (pos1 >= 0)
+                (*l) = pos_2;
+            else
+                ante->next = pos_2;
+
+            // replacing the next of the next before pos2
+            post->next = pos_1;
+
+            // storing the node after the current one
+            buffer = pos_2->next;
+
+            // replacing the next of the current node with the next of pos_1
+            pos_2->next = pos_1->next;
+
+            // doing the same for pos_1
+            pos_1->next = buffer;
+        }else
         {
-            first = index2;
-            second = index1;
-        }else{
-            return;
-        }
-
-        // prevent the case of fist < 0
-        if (first < 0) { first = 0;}
-
-        while(second >= 0 && buffer != 0)
-        {
-            if (second == 0)
-            {
-
-                buffer_previous->next = buffer_first;
-                if (buffer_first_previous == 0)
-                {
-                    *node = buffer;
-                }else{
-                    buffer_first_previous->next = buffer;
-                }
-
-                buffer_next = buffer_first->next;
-                buffer_first->next = buffer->next;
-                buffer->next = buffer_next;
-            }else if (second == 1 || buffer->next->next == 0)
-            {
-                // save the node before the switched one
-                buffer_previous = buffer;
-                // setting second to 1 to prevent the case where second > len(SLL)
-                second = 1;
-            }
-
-            if (first == 0)
-            {
-                // save the switched node
-                buffer_first = buffer;
-            }else if (first == 1)
-            {
-                // save the node before the switched one
-                buffer_first_previous = buffer;
-            }
-
-            second -= 1;
-            first--;
             buffer = buffer->next;
         }
+
+        first --;
+        second --;
     }
 }
 
