@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "hephaistos/Element.h"
-#include "hephaistos/one.h"
-#include "hephaistos/two.h"
-#include "hephaistos/three.h"
+#include "hephaistos/Liste-1/one.h"
+#include "hephaistos/Liste-1/two.h"
+#include "hephaistos/Liste-1/three.h"
 #include "lib/SLL.h"
 
 int main()
 {
     printf("*-----------------------------------------------*\n");
-    printf("| Liste 1 P1 test file, no interaction required |\n");
+    printf("| Liste-1 P1 test file, no interaction required |\n");
     printf("*-----------------------------------------------*\n");
 
     Element* a = initSLL(4);

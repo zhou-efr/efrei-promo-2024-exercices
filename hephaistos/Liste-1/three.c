@@ -4,7 +4,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "Element.h"
+#include "../Element.h"
 #include "three.h"
 
 // 3.1 Fusionner deux listes chaînées dont les valeurs des éléments sont croissantes
