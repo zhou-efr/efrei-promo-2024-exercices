@@ -27,6 +27,32 @@ void list_add_array(Element** l, int* arr, int n, int pos){
     }
 }
 
+void list_bubble_sort(Element** l){
+    if(*l == 0){return;}
+    int a = 1;
+    int b_next = 0;
+    List buffer = *l;
+    while(a == 1)
+    {
+        a = 0;
+        buffer = *l;
+        while(buffer->next != 0)
+        {
+            if(buffer->data > buffer->next->data)
+            {
+                b_next = buffer->next->data;
+                buffer->next->data = buffer->data;
+                buffer->data = b_next;
+                a = 1;
+            }
+            else
+            {
+                buffer = buffer->next;
+            }
+        }
+    }
+}
+
 Stack* create_stack(){
     Stack* wen = (Stack*)malloc(sizeof(Stack)); // wen <=> new
     wen->top = 0;

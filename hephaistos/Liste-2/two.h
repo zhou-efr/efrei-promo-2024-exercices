@@ -9,8 +9,11 @@
 #include "../Element.h"
 
 
-// 2.2
+// 2.1
 void list_add_array(Element** l, int* arr, int n, int pos);
+
+// 2.2
+void list_bubble_sort(Element** l);
 
 // 2.3
 typedef struct Stack{
