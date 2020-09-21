@@ -541,7 +541,7 @@ Node* array_to_SLL(int* target, int size)
     return start;
 }
 
-void split(Node* start, Node* cut)
+void split(Node** l, Node* e)
 {
     /*
      * split :
@@ -551,12 +551,16 @@ void split(Node* start, Node* cut)
      * split a SLL into two SLL.
      */
 
-    if (start != 0)
+    if ((*l) != 0)
     {
-        if (start->next == cut){
-            start->next = 0;
+        if((*l) == e){
+            (*l) = 0;
+        }
+        else if ((*l)->next == e)
+        {
+            (*l)->next = 0;
         }else{
-            split(start->next, cut);
+            list_split(&((*l)->next), e);
         }
     }
 }
