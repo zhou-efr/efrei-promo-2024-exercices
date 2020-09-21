@@ -38,6 +38,7 @@ int isCLL(Node* node)
 
 int lenCLL(Node* node)
 {
+    if(l == 0){return 0;}
     Node* buffer = node;
     int i = 0;
 
