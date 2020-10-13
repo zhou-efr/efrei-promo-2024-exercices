@@ -20,11 +20,10 @@ int childrenBefore(Tree* node);
 int t_free(Tree* node);
 
 Tree* create_tree(int size);
-int trees_has_even_leaves(Tree* node);
+int leafParity(Tree* node);
 int binaryDepth(Tree* node);
 
 Tree* createTreeFromArray(int* arr, int size);
 Tree* treeDeepCopy(Tree* node);
-
 
 #endif //TD_EN_C_TREE_H

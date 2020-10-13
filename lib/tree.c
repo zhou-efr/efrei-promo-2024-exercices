@@ -71,10 +71,10 @@ Tree* create_tree(int size)
     return 0;
 }
 
-int trees_has_even_leaves(Tree* tree){
+int leafParity(Tree* tree){
     if (tree != 0)
-        return (trees_has_even_leaves(tree->left) ==
-                trees_has_even_leaves(tree->right) && tree->left);
+        return (leafParity(tree->left) ==
+                        leafParity(tree->right) && tree->left);
     return 1;
 }
 
