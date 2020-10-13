@@ -7,4 +7,4 @@ add_executable(TD_en_C lib/SLL.h lib/simpleLinkedList.c lib/circledLinkedList.c 
         lib/DLL.h lib/stack.c lib/stack.h "hephaistos/Liste-1/one.c" "hephaistos/Liste-1/one.h" hephaistos/Element.c
         hephaistos/Element.h "hephaistos/Liste-1/two.c" "hephaistos/Liste-1/two.h" "hephaistos/Liste-1/three.c"
         "hephaistos/Liste-1/three.h" hephaistos/Liste-2/one-2.c hephaistos/Liste-2/one-2.h hephaistos/Liste-2/two-2.c
-        hephaistos/Liste-2/two.h lib/Hephaistos_tree_1_main.c)
+        hephaistos/Liste-2/two.h Hephaistos_tree_1_main.c)

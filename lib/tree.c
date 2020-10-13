@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include "tree.h"
 
-int len(Tree* node)
+int len_t(Tree* node)
 {
     if(node != 0)
     {

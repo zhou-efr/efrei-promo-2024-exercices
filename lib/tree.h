@@ -13,7 +13,7 @@ typedef struct SThree
     struct SThree* right;
 }Tree;
 
-int len(Tree* node);
+int len_t(Tree* node);
 int isIn(Tree* node, int target);
 void doubleIt(Tree* node);
 int childrenBefore(Tree* node);
