@@ -10,6 +10,7 @@
 int trees_count_nodes(Node* tree);
 int trees_has_value(Node* tree, int val);
 void trees_double_values(Node* tree);
+void trees_add_one_to_value(Node* tree);
 void trees_log_parents_after_children(Node* tree);
 void trees_free_tree(Node* tree);
 

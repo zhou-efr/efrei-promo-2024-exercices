@@ -39,6 +39,15 @@ void trees_double_values(Node* tree){
     }
 }
 
+void trees_add_one_to_value(Node* tree){
+    if(tree != 0)
+    {
+        tree->data++;
+        trees_add_one_to_value(tree->left);
+        trees_add_one_to_value(tree->right);
+    }
+}
+
 // 1.4
 void trees_log_parents_after_children(Node* tree){
     if(tree != 0)
