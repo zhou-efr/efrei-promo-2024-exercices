@@ -10,7 +10,7 @@ int len_t(Tree* node)
 {
     if(node != 0)
     {
-        return len_t(node->left) + len(node->right) + 1;
+        return len_t(node->left) + len_t(node->right) + 1;
     }
     return 0;
 }
