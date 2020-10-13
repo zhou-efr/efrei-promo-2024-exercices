@@ -12,4 +12,12 @@ typedef struct Element {
 
 typedef Element* List;
 
+typedef struct Node {
+    int data;
+    struct Node* left;
+    struct Node* right;
+} Node;
+
+typedef Node* Tree;
+
 #endif //TD_EN_C_ELEMENT_H

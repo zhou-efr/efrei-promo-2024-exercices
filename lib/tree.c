@@ -71,16 +71,11 @@ Tree* create_tree(int size)
     return 0;
 }
 
-int leafParity(Tree* node)
-{
-    if (node != 0)
-    {
-        if (leafParity(node->left) == leafParity(node->right))
-            return 0;
-        else
-            return 1;
-    }
-    return 0;
+int trees_has_even_leaves(Tree* tree){
+    if (tree != 0)
+        return (trees_has_even_leaves(tree->left) ==
+                trees_has_even_leaves(tree->right) && tree->left);
+    return 1;
 }
 
 int binaryDepth(Tree* node)
