@@ -98,20 +98,42 @@ Tree* createTreeFromArray(int* arr, int size)
      * original idea from valou & pablo
      * */
 
-    if(size > 0)
+    if(size > 0 && arr != 0)
     {
+        // printf("\n\tsize = %d\n\tdata = %d\n", size, arr[size-1]);
         Tree* buffer = (Tree*)malloc(sizeof(Tree));
-        buffer->data = arr[size-1];
+        buffer->data = arr[size - 1];
 
-        int newSize = (size%2)?((size-1)/2):(size/2);
-        int* buffer_arr = (int*)malloc(newSize*sizeof(int));for (int i = 0; i < newSize; i++){buffer_arr[i]=arr[i];}
-        buffer->left = createTreeFromArray(buffer_arr, newSize);
-        free(buffer_arr);
+        int left_size, right_size, *left_array = 0, *right_array = 0;
 
-        int newSizer = (size%2)?((size-1)/2):((int)((size-1)/2));
-        buffer_arr = (int*)malloc(newSizer*sizeof(int));for (int i = 0; i < newSizer; i++){buffer_arr[newSizer+i]=arr[i];}
-        buffer->right = createTreeFromArray(buffer_arr, newSize);
-        free(buffer_arr);
+        if(size%2 == 0)
+        {
+            left_size = size/2;
+            right_size = (size/2)-1;
+            // left side
+            left_array = (int*)malloc(left_size*sizeof(int));
+            for(int i = 0; i < left_size; i++){left_array[i] = arr[i];}
+            // right side
+            right_array = (int*)malloc(right_size*sizeof(int));
+            for(int i = 0; i < right_size; i++){right_array[i] = arr[i+left_size];}
+        }
+        else{
+            left_size = (size-1)/2;
+            right_size = (size-1)/2;
+            // left side
+            left_array = (int*)malloc(left_size*sizeof(int));
+            for(int i = 0; i < left_size; i++){left_array[i] = arr[i];}
+            // right side
+            right_array = (int*)malloc(right_size*sizeof(int));
+            for(int i = 0; i < right_size; i++){right_array[i] = arr[i+left_size];}
+        }
+
+        // attribution
+        buffer->left = createTreeFromArray(left_array, left_size);
+        buffer->right = createTreeFromArray(right_array, right_size);
+
+        free(left_array);
+        free(right_array);
 
         return buffer;
     }
