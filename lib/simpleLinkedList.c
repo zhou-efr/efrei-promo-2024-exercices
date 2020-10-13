@@ -560,7 +560,7 @@ void split(Node** l, Node* e)
         {
             (*l)->next = 0;
         }else{
-            list_split(&((*l)->next), e);
+            split(&((*l)->next), e);
         }
     }
 }

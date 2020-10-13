@@ -22,6 +22,6 @@ int list_circ_size(Element* l);
 Element* list_from_array(int* tab, int n);
 
 // 1.5
-void list_split(Element** l, Element* e)
+void list_split(Element** l, Element* e);
 
 #endif //TD_EN_C_ONE_2_H

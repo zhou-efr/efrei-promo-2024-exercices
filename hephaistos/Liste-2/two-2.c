@@ -110,10 +110,14 @@ void enqueue(Queue* q, int val){
 
 }
 
+int is_empty_q(Queue* s){
+    return (s->top == 0);
+}
+
 //En cas de pile vide, renvoyer -1 (arbitraire)
 //If the stack is empty, return -1 (arbitrary)
 int dequeue(Queue* q){
-    if(q == 0 || is_empty(q)){return -1;}
+    if(q == 0 || is_empty_q(q)){return -1;}
     List buffer = q->top->next;
     int buffer_data = q->top->data;
     free(q->top);

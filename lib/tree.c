@@ -118,17 +118,13 @@ Tree* createTreeFromArray(int* arr, int size)
     return 0;
 }
 
-Tree* treeDeepCopy(Tree* node)
+void display_tree(Tree* node)
 {
     if(node != 0)
     {
-        Tree* buffer = (Tree*)malloc(sizeof(Tree));
-        buffer->data = node->data;
-        buffer->left = treeDeepCopy(node->left);
-        buffer->right = treeDeepCopy(node->right);
-        return buffer;
+        doubleIt(node->left);
+        doubleIt(node->right);
     }
-    return 0;
 }
 
 #include "stack.h"

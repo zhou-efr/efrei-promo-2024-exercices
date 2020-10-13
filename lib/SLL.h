@@ -79,7 +79,7 @@ void concatenateSLL(Node* destination, Node* target);
 Node* array_to_SLL(int* target, int size);
 
 // ex 1.5
-void split(Node* start, Node* cut);
+void split(Node** start, Node* cut);
 
 // ex 2.1
 void insert_array_to_SLL(Node** destination, int* target, int size, int pos);
