@@ -10,7 +10,7 @@ int len_t(Tree* node)
 {
     if(node != 0)
     {
-        return len(node->left) + len(node->right) + 1;
+        return len_t(node->left) + len(node->right) + 1;
     }
     return 0;
 }
@@ -140,13 +140,17 @@ Tree* createTreeFromArray(int* arr, int size)
     return 0;
 }
 
-void display_tree(Tree* node)
+Tree* treeDeepCopy(Tree* node)
 {
     if(node != 0)
     {
-        doubleIt(node->left);
-        doubleIt(node->right);
+        Tree* buffer = (Tree*)malloc(sizeof(Tree));
+        buffer->data = node->data;
+        buffer->left = treeDeepCopy(node->left);
+        buffer->right = treeDeepCopy(node->right);
+        return buffer;
     }
+    return 0;
 }
 
 #include "stack.h"
