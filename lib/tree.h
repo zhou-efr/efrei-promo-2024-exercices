@@ -26,5 +26,5 @@ int binaryDepth(Tree* node);
 Tree* createTreeFromArray(int* arr, int size);
 Tree* treeDeepCopy(Tree* node);
 
-void iterative_display(Tree* arbre);
+
 #endif //TD_EN_C_TREE_H
