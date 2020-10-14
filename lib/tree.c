@@ -156,7 +156,7 @@ void toStr_tree_left_to_right_test(Tree* node)
     Tree* buffer = node;
     push_stack(history, 0);
 
-    do{
+    while (buffer != 0 || history->top->data != 0){
         if(buffer)
         {
             if (buffer == (Tree*)history->top->data)
@@ -175,7 +175,7 @@ void toStr_tree_left_to_right_test(Tree* node)
             printf("%d ", buffer_history->data);
             buffer = (Tree*) history->top->data;
         }
-    }while (buffer != 0 || history->top->data != 0);
+    }
 
     free(history);
 }
