@@ -148,10 +148,34 @@ Tree* treeDeepCopy(Tree* node)
     return 0;
 }
 
-#include "stack.h"
+#include "Stack/Stack.h"
 
-void iterative_display(Tree* arbre)
+void toStr_tree_left_to_right_test(Tree* node)
 {
-    Stack* pile = (Stack*)malloc(sizeof(Stack));
-    stackPushNode(pile, arbre);
+    Stack* history = initialize_stack();
+    Tree* buffer = node;
+    push_stack(history, 0);
+
+    do{
+        if(buffer)
+        {
+            if (buffer == (Tree*)history->top->data)
+            {
+                Tree* buffer_right = (Tree*)pull_stack(history);
+                buffer = buffer_right->right;
+            }
+            else
+            {
+                push_stack(history, (int)buffer);
+                buffer = buffer->left;
+            }
+        }
+        else {
+            Tree* buffer_history = (Tree*) history->top->data;
+            printf("%d ", buffer_history->data);
+            buffer = (Tree*) history->top->data;
+        }
+    }while (buffer != 0 || history->top->data != 0);
+
+    free(history);
 }
