@@ -6,8 +6,8 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include "lib/SLL.h"
-#include "lib/CLL.h"
+#include "lib/SimpleLinkedList/SLL.h"
+#include "lib/CircledLinkedList/CLL.h"
 
 int main() {
     printf("*----------------------------------------*\n");

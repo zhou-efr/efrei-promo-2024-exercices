@@ -148,7 +148,7 @@ Tree* treeDeepCopy(Tree* node)
     return 0;
 }
 
-#include "Stack/Stack.h"
+#include "../Stack/Stack.h"
 
 void toStr_tree_left_to_right_test(Tree* node)
 {

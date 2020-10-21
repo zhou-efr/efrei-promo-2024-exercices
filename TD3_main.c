@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "lib/tree.h"
+#include "lib/Tree/tree.h"
 
 int main() {
 

@@ -4,7 +4,7 @@
 #include "hephaistos/Liste-1/one.h"
 #include "hephaistos/Liste-1/two.h"
 #include "hephaistos/Liste-1/three.h"
-#include "lib/SLL.h"
+#include "lib/SimpleLinkedList/SLL.h"
 
 int main()
 {

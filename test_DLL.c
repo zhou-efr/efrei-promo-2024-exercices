@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "lib/DLL.h"
+#include "lib/DoubleLinkedList/DLL.h"
 
 int main()
 {

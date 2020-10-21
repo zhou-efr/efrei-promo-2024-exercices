@@ -6,9 +6,9 @@
  */
 #include <stdlib.h>
 #include <stdio.h>
-#include "lib/SLL.h"
-#include "lib/CLL.h"
-#include "lib/DLL.h"
+#include "lib/SimpleLinkedList/SLL.h"
+#include "lib/CircledLinkedList/CLL.h"
+#include "lib/DoubleLinkedList/DLL.h"
 
 int main()
 {
