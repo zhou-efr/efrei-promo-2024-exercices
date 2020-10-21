@@ -20,4 +20,6 @@ typedef struct Node {
 
 typedef Node* Tree;
 
+void h_log(int value);
+
 #endif //TD_EN_C_ELEMENT_H
