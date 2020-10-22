@@ -112,6 +112,7 @@ Définition Soit une LDC d’entiers de longueur n, on note la valeur de l’él
 Concevoir un algorithme qui prend en argument une LSC d’entiers et qui retourne un tableau de même taille et dont la valeur des éléments sont dans le même ordre et les mêmes que celles de la liste
 
 ## Arbres 1 P1
+[link to the files](https://github.com/zhou-efr/L2-C/blob/master/hephaistos/Arbre-1/one-1.c)
 - <strong> 1.1 Compter le nombre d’éléments d’un arbre binaire </strong> <br/>
 Concevoir un algorithme récursif qui retourne le nombre d’éléments d’un arbre binaire.
 - <strong> 1.2 Rechercher un élément dans un arbre binaire </strong> <br/>
@@ -124,18 +125,23 @@ Après avoir rappelé la différence entre les parcours préfixe, suffixe et inf
 Concevoir un algorithme récursif qui supprime un arbre binaire passé en argument, c'est-à-dire qui libère la mémoire de tous ses éléments dans un ordre judicieux, de façon à ne pas libérer un élément ayant des enfants occupant encore de la mémoire.
 
 ## Arbres 1 P2
+[link to the files](https://github.com/zhou-efr/L2-C/blob/master/hephaistos/Arbre-1/two-3.c)
 - <strong> 2.1 Créer un arbre ayant un nombre arbitraire d’éléments </strong> <br/>
 Concevoir un algorithme, qui prend en argument un entier positif, qui crée et retourne un arbre binaire ayant un nombre d’éléments égal à cet entier.
 - <strong> 2.2 Déterminer si un arbre binaire a un nombre pair de feuilles </strong> <br/>
 Concevoir un algorithme récursif qui renvoie vrai lorsque l’arbre binaire passé en argument admet un nombre pair de feuilles et qui renvoie faux dans le cas contraire.
 - <strong> 2.3 Rechercher le niveau de profondeur d’un élément dans un arbre binaire </strong> <br/>
 Concevoir un algorithme récursif, qui prend en argument un entier et un arbre binaire d’entiers, qui renvoie le niveau de profondeur (0 pour la racine,1 pour le 1er niveau et ainsi de suite) de cet entier s’il appartient à l’arbre binaire, et qui renvoie −1 dans le cas contraire.
+
 ## Arbres 1 P3
+[link to the files](https://github.com/zhou-efr/L2-C/blob/master/hephaistos/Arbre-1/three-3.c)
 - <strong> 3.1 Créer un arbre binaire à partir d’un tableau  </strong> <br/>
 Concevoir un algorithme récursif, qui prend en argument un tableau d’entiers de taille arbitraire, qui crée et retourne un arbre binaire d’entiers équilibré de même taille contenant les éléments de ce tableau.
 - <strong> 3.2 Copier un arbre binaire </strong> <br/>
 Concevoir un algorithme, qui prend en argument un arbre binaire d’entiers, qui retourne un nouvel arbre binaire identique à celui passé en argument : le nouvel arbre doit avoir le même nombre d’éléments, répartis de la même façon, avec les mêmes valeurs. L’arbre retourné ne doit bien entendu pas dépendre de la mémoire allouée pour les éléments de l’arbre « modèle ».
+
 ## Arbres 2 P1
+[link to the files](https://github.com/zhou-efr/L2-C/blob/master/hephaistos/Arbre-2/onefour.c)
 - <strong> 1.1 Parcourir itérativement un arbre binaire </strong> <br/>
 Concevoir un algorithme itératif utilisant une pile qui log tous les éléments d’un arbre binaire dans un ordre préfixe.
 Un algorithme récursif passera évidement les tests. Ce n'est pas l'objectif...
@@ -148,11 +154,14 @@ Concevoir un algorithme qui affiche un arbre avec un ordre préfixe (de gauche �
 Notez que cet arbre n’est pas forcément binaire : chaque nœud peut avoir un nombre arbitraire d’enfants.
 - <strong> 1.5 Ajouter un élément en bas d’un arbre binaire  </strong> <br/>
 Concevoir un algorithme, qui prend en argument un entier et un arbre binaire de recherche d’entiers, qui ajoute cet entier en bas de cet arbre (le nœud qui sera créé sera donc une feuille). La descente dans l’arbre pour l’ajout de ce nœud devra se faire aléatoirement.
+
 ## Arbres 2 P2
+[link to the files](https://github.com/zhou-efr/L2-C/blob/master/hephaistos/Arbre-2/twofour.c)
 - <strong> 2.1 Ajouter un élément à un arbre binaire de recherche (BST) </strong> <br/>
 Concevoir un algorithme, qui prend en argument un entier et un arbre binaire de recherche d’entiers, qui ajoute cet entier à cet arbre.
 - <strong> 2.2 Retirer un élément à un arbre binaire de recherche </strong> <br/>
 Concevoir un algorithme, qui prend en argument un entier et un arbre binaire de recherche d’entiers, qui retire dans cet arbre le nœud dont la valeur est cet entier.
+
 ## Arbres 2 P3
 - <strong> 3.1 Équilibrer un arbre binaire de recherche </strong> <br/>
 Concevoir un algorithme, qui prend en argument un arbre binaire de recherche, et qui l’équilibre (comparable à un arbre AVL).
