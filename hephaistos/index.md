@@ -4,9 +4,9 @@
 - Listes
     - [Listes 1 P1](#listes-1-p1)
     - [Listes 1 P2](#listes-1-p2)
-    - [Listes 1 P1](#listes-2-p1)
-    - [Listes 2 P2](#listes-2-p2)
-    - [Listes 2 P3](#listes-2-p3)
+    - [Listes 1 P3](#listes-1-p3)
+    - [Listes 2 P2](#listes-2-p1)
+    - [Listes 2 P3](#listes-2-p2)
 - Arbres
     - [Arbres 1 P1](#arbres-1-p1)
     - [Arbres 1 P2](#arbres-2-p2)
