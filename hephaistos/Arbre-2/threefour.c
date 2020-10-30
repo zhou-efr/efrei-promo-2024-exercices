@@ -7,7 +7,7 @@
 #include "threefour.h"
 
 /*
- * author : mainly marshall breton (via les code qu'il a donne au classiques)
+ * author : mainly marshall breton (via le code qu'il a donne aux classiques)
  */
 
 int depth(Node* tree){
