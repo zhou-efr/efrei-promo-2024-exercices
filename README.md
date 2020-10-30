@@ -18,7 +18,7 @@ Zhou.
 
 ## Installation
 ### CLion
-Lancez CLion, cliquez sur "Open/Import", selectionnez le dossier `L2-C`.
+Téléchargez le git en zip, unzippez le, et ouvrer CLion. Si un projet est déjà ouvert allez dans *file > close project*. Dans la petite fenêtre qui s'est alors ouverte cliquez sur *New CMake Project from Sources* puis *Open Existing Project*. Patientez et lorsque que s'affiche *TD_en_C | Debug* en haut a droite de la fenêtre c'est que le projet a bien été initialisé.
 
 ### CodeBlock
 Créez un nouveau projet console. Faites <em>click droit</em>-><em>remove file from project</em> sur le fichier `main.c`. Déplacez tout les fichiers du git dans le dossier du projet. (Sur codeblock) Faites <em>click droit</em>-><em>add files...</em> sur le projet (icone codeblock dans <em>management</em> -> <em>Projects</em>). Selectionnez tous les fichiers `TD*_main.c`. Recommencez avec les fichiers du dossier `lib`. 
