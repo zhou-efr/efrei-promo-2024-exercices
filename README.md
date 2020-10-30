@@ -72,11 +72,13 @@ Puis faites <em>Build</em>-><em>Build and Run</em>.
 Si vous rencontrer une erreur, un crash, un exercice qui ne correspond pas à la consigne, vous êtes invités à me le signaler à `killian.zhou@efrei.net`. Veuillez à y préciser la nature du problème, la portion de code concerné et le/les fichiers correspondants. Merci.
 
 ## Index hephaistos
-Les exercices de la plateforme hephaistos sont present dans le dossier du même nom et l'index des exercices est present 
-[ici](https://github.com/gundamzhou/L2-C/tree/master/hephaistos/index.md).
+Les exercices de la plateforme hephaistos sont present dans le dossier du même nom et l'[index des exercices](https://github.com/gundamzhou/L2-C/tree/master/hephaistos/index.md) est present. Pour tester vos exercices allez sur [hephaistos](https://hephaistos.platypus.academy/login).
 
 ## Index
-Retrouvez [ici](https://github.com/gundamzhou/L2-C/blob/master/index.md) l'index des exercices ainsi que leurs descriptions (cliquer sur le numéro de ligne pour être renvoyé sur le fichier contenant l'exercercice). [page moodle](https://www.myefrei.fr/moodle/course/view.php?id=6870)<br/> licence description : Int EFREI de White Pepper S.A.S. est mis à disposition selon les termes de la licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International. Les autorisations au-delà du champ de cette licence peuvent être obtenues à mailto://franck.lepoivre@platypus.academy
+Retrouvez [ici](https://github.com/gundamzhou/L2-C/blob/master/index.md) l'index des exercices ainsi que leurs descriptions (cliquer sur le numéro de ligne pour être renvoyé sur le fichier contenant l'exercercice). [page moodle](https://www.myefrei.fr/moodle/course/view.php?id=6870)<br/> 
+
+## Licence description
+Int EFREI de White Pepper S.A.S. est mis à disposition selon les termes de la licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International. Les autorisations au-delà du champ de cette licence peuvent être obtenues à mailto://franck.lepoivre@platypus.academy
 
 ## Contributeurs :
 
