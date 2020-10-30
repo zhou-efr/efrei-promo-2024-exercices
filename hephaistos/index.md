@@ -117,7 +117,7 @@ Définition Soit une LDC d’entiers de longueur n, on note la valeur de l’él
 Concevoir un algorithme qui prend en argument une LSC d’entiers et qui retourne un tableau de même taille et dont la valeur des éléments sont dans le même ordre et les mêmes que celles de la liste
 
 ## Arbres 1 P1
-[link to the files](https://github.com/zhou-efr/L2-C/blob/master/hephaistos/Arbre-1/one-1.c)
+[link to the files](https://github.com/zhou-efr/L2-C/blob/master/hephaistos/Arbre-1/one-3.c)
 - <strong> 1.1 Compter le nombre d’éléments d’un arbre binaire </strong> <br/>
 Concevoir un algorithme récursif qui retourne le nombre d’éléments d’un arbre binaire.
 - <strong> 1.2 Rechercher un élément dans un arbre binaire </strong> <br/>
