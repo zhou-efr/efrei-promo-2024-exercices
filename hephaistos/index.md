@@ -16,7 +16,7 @@
     - [Arbres 2 P3](#arbres-2-p3)
     
 ## Structures
-La majorité des structures sont dans ces fichiers : SLL, Stack, Queue.<br/>
+La majorité des structures sont dans ces fichiers (SLL, Stack, Queue) : <br/>
 [Element.h](https://github.com/zhou-efr/L2-C/blob/master/hephaistos/Element.h)<br/>
 [Element.c](https://github.com/zhou-efr/L2-C/blob/master/hephaistos/Element.c)
 
