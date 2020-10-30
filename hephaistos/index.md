@@ -163,5 +163,6 @@ Concevoir un algorithme, qui prend en argument un entier et un arbre binaire de 
 Concevoir un algorithme, qui prend en argument un entier et un arbre binaire de recherche d’entiers, qui retire dans cet arbre le nœud dont la valeur est cet entier.
 
 ## Arbres 2 P3
+[link to the files](https://github.com/zhou-efr/L2-C/blob/master/hephaistos/Arbre-2/threefour.c)
 - <strong> 3.1 Équilibrer un arbre binaire de recherche </strong> <br/>
 Concevoir un algorithme, qui prend en argument un arbre binaire de recherche, et qui l’équilibre (comparable à un arbre AVL).
