@@ -4,10 +4,10 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "hephaistos/Element.h"
-#include "hephaistos/Arbre-1/one-3.h"
-#include "hephaistos/Arbre-1/two-3.h"
-#include "hephaistos/Arbre-1/three-3.h"
+#include "../../hephaistos/Element.h"
+#include "../../hephaistos/Arbre-1/one-3.h"
+#include "../../hephaistos/Arbre-1/two-3.h"
+#include "../../hephaistos/Arbre-1/three-3.h"
 
 int main()
 {
