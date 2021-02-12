@@ -28,12 +28,12 @@ public class Point
         y = ny;
     }
 
-    public String toStr()
+    public String toString()
     {
         return "(" + x + ", " + y + ")";
     }
     public void display()
     {
-        System.out.println(toStr());
+        System.out.println(toString());
     }
 }

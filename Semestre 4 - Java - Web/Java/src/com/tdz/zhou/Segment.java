@@ -12,11 +12,11 @@ public class Segment {
         _b = new Point(bx, by);
     }
 
-    public String toStr(){
+    public String toString(){
         return "[(" + _a.getX() + ", " + _a.getY() + ") (" + _b.getX() + ", " + _b.getY() + ")]";
     }
     public void display(){
-        System.out.println(toStr());
+        System.out.println(toString());
     }
 
     public void setA(Point a)

@@ -18,16 +18,16 @@ public class Main {
         System.out.println("absicia = " + p.getX() + " ; ordinate = " + p.getY());
         p.setX(5);
         p.setY(6);
-        System.out.println(p.toStr());
+        System.out.println(p.toString());
     }
 
     public static void test_Segment(){
         Segment s = new Segment(new Point(1, 2), new Point(2, 2));
         s.display();
-        System.out.println("A = " + s.getA().toStr() + " ; b = " + s.getB().toStr());
+        System.out.println("A = " + s.getA().toString() + " ; b = " + s.getB().toString());
         s.setA(new Point(5, 5));
         s.setB(new Point(6, 6));
-        System.out.println(s.toStr());
+        System.out.println(s.toString());
     }
 
     public static void main(String[] args) {
