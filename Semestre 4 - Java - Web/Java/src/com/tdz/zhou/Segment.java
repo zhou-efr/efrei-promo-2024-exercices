@@ -11,7 +11,14 @@ public class Segment {
         _a = new Point(ax, ay);
         _b = new Point(bx, by);
     }
+    public Segment(){
+        _a = new Point(0, 0);
+        _b = new Point(0, 0);
+    }
 
+    public double getLength(){
+        return Math.sqrt(Math.pow(_b.getX() - _a.getX(), 2) + Math.pow(_b.getY() - _a.getY(), 2));
+    }
     public String toString(){
         return "[(" + _a.getX() + ", " + _a.getY() + ") (" + _b.getX() + ", " + _b.getY() + ")]";
     }

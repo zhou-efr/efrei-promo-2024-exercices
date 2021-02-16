@@ -28,11 +28,31 @@ public class Main {
         s.setA(new Point(5, 5));
         s.setB(new Point(6, 6));
         System.out.println(s.toString());
+        System.out.println("length = " + s.getLength());
+    }
+
+    public static void test_Vehicle() {
+        Vehicle a = new Vehicle("Panda", 200, 5);
+        Vehicle b = new Vehicle("Panda", 100, 2.5);
+
+        System.out.println("step 1 : " + a + "\n" + b);
+        a.start(80);
+        b.start(50);
+        System.out.println("step 2 : " + a + "\n" + b);
+        a.accelerate(80);
+        b.accelerate(90);
+        System.out.println("step 3 : " + a + "\n" + b);
+        a.forward(100);
+        b.backward(300);
+        System.out.println("step 4 : " + a + "\n" + b);
+        System.out.println(Vehicle.getNumber());
     }
 
     public static void main(String[] args) {
-        test_point();
-        System.out.println("--------------");
-        test_Segment();
+//        test_point();
+//        System.out.println("--------------");
+//        test_Segment();
+//        System.out.println("--------------");
+        test_Vehicle();
     }
 }
