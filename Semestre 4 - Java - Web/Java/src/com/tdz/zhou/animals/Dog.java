@@ -4,14 +4,17 @@ public class Dog extends Animal{
     private String owner;
 
     public Dog() {
-        this.weight = 10;
-        this.name = "none";
+        super(10, "none");
         this.owner = "tdz";
     }
 
     public Dog(String owner, int weight, String name) {
-        this.weight = weight;
-        this.name = name;
+        super(weight, name);
+        this.owner = owner;
+    }
+
+    public Dog(Animal origin, String owner){
+        super(origin.getWeight(), origin.getName());
         this.owner = owner;
     }
 

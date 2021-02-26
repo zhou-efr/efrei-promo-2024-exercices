@@ -4,14 +4,12 @@ public class Cat extends Animal{
     private final String breed;
 
     public Cat() {
-        this.weight = 10;
-        this.name = "none";
+        super(10, "none");
         this.breed = "tdz";
     }
 
     public Cat(String breed, int weight, String name) {
-        this.weight = weight;
-        this.name = name;
+        super(weight, name);
         this.breed = breed;
     }
 

@@ -1,8 +1,8 @@
 package com.tdz.zhou.animals;
 
 public class Animal {
-    protected int weight;
-    protected String name;
+    private int weight;
+    private String name;
 
     public Animal()
     {

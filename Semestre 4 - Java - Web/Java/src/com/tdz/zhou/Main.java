@@ -7,6 +7,8 @@ import com.tdz.zhou.geometry.Point;
 import com.tdz.zhou.geometry.Segment;
 import com.tdz.zhou.others.Vehicle;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void test_point() {
@@ -56,7 +58,14 @@ public class Main {
     }
 
     public static void test_Animal() {
-        Animal panda = new Animal(75, "panda");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        sc.nextLine();
+        String b = sc.nextLine();
+
+        Animal panda = new Animal(a, b);
+
+        System.out.println(panda.toString());
         Dog un = new Dog("a", 10, "un");
         System.out.println(un.toString());
         Dog[] dogs = {
@@ -69,6 +78,8 @@ public class Main {
         }
         Cat cinq = new Cat("red", 7, "mirou");
         System.out.println(cinq.toString());
+        Animal qw = new Dog();
+
     }
 
     public static void main(String[] args) {
