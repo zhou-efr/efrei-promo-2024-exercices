@@ -1,4 +1,4 @@
-package com.tdz.zhou;
+package com.tdz.zhou.geometry;
 
 public class Point
 {

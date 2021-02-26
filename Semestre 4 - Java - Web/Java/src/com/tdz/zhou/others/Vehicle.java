@@ -1,4 +1,4 @@
-package com.tdz.zhou;
+package com.tdz.zhou.others;
 
 public class Vehicle {
     /**

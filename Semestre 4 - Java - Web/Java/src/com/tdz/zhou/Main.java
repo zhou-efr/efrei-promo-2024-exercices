@@ -1,5 +1,12 @@
 package com.tdz.zhou;
 
+import com.tdz.zhou.animals.Animal;
+import com.tdz.zhou.animals.Cat;
+import com.tdz.zhou.animals.Dog;
+import com.tdz.zhou.geometry.Point;
+import com.tdz.zhou.geometry.Segment;
+import com.tdz.zhou.others.Vehicle;
+
 public class Main {
 
     public static void test_point() {
@@ -48,11 +55,28 @@ public class Main {
         System.out.println(Vehicle.getNumber());
     }
 
+    public static void test_Animal() {
+        Animal panda = new Animal(75, "panda");
+        Dog un = new Dog("a", 10, "un");
+        System.out.println(un.toString());
+        Dog[] dogs = {
+                un,
+                new Dog("b", 10, "deux"),
+                new Dog("c", 10, "trois"),
+                new Dog("d", 10, "quatre") };
+        for (Dog dog : dogs) {
+            System.out.println(dog.toString());
+        }
+        Cat cinq = new Cat("red", 7, "mirou");
+        System.out.println(cinq.toString());
+    }
+
     public static void main(String[] args) {
 //        test_point();
 //        System.out.println("--------------");
 //        test_Segment();
 //        System.out.println("--------------");
-        test_Vehicle();
+//        test_Vehicle();
+        test_Animal();
     }
 }
