@@ -1,4 +1,4 @@
-package com.tdz.zhou.animals;
+package com.tdz.zhou.zoo;
 
 public class Dog extends Animal{
     private String owner;

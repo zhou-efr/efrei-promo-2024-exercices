@@ -1,4 +1,4 @@
-package com.tdz.zhou.animals;
+package com.tdz.zhou.zoo;
 
 public class Cat extends Animal{
     private final String breed;

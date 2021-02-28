@@ -1,12 +1,15 @@
 package com.tdz.zhou;
 
-import com.tdz.zhou.animals.Animal;
-import com.tdz.zhou.animals.Cat;
-import com.tdz.zhou.animals.Dog;
+import com.tdz.zhou.geometry.Circle;
+import com.tdz.zhou.geometry.CircleBold;
+import com.tdz.zhou.zoo.Animal;
+import com.tdz.zhou.zoo.Cat;
+import com.tdz.zhou.zoo.Dog;
 import com.tdz.zhou.geometry.Point;
 import com.tdz.zhou.geometry.Segment;
 import com.tdz.zhou.others.Vehicle;
 
+import java.awt.*;
 import java.util.Scanner;
 
 public class Main {
@@ -82,12 +85,24 @@ public class Main {
 
     }
 
+    public static void test_Circle() {
+        Circle c = new Circle(1, 2, 3);
+        System.out.println(c.toString());
+    }
+
+    public static void test_Circle_Bold() {
+        CircleBold c = new CircleBold(1, 2, 3, Color.RED);
+        System.out.println(c.toString());
+    }
+
     public static void main(String[] args) {
 //        test_point();
 //        System.out.println("--------------");
 //        test_Segment();
 //        System.out.println("--------------");
 //        test_Vehicle();
-        test_Animal();
+//        test_Animal();
+//        test_Circle();
+        test_Circle_Bold();
     }
 }
