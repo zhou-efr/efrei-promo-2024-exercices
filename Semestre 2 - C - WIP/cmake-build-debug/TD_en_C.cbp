@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="TD_en_C"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main.c">
+				<Option output="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/main.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 main.c"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main.c/fast">
+				<Option output="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/main.c.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 main.c/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 2/session 2.c">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 2/session 2.h">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 3/session 3.c">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 3/session 3.h">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 4/session 4.c">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 4/session 4.h">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 5/Date.c">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 5/Date.h">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 5/classroom.c">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 5/classroom.h">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 5/fileinteractions.c">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 5/fileinteractions.h">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 5/student.c">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/session 5/student.h">
+			<Option target="main.c"/>
+		</Unit>
+		<Unit filename="C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

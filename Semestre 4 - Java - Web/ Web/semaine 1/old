@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Getting started</title>
+    </head>
+
+    <body>
+    	<h1>Exercise 1</h1>
+    	<p>This is the first paragraphe from the first exercise.</p>
+    	<p>This is the second paragraph from the first exercise with the <span style = "color:red">red</span> word.</p> <!-- The word red is written in red-->
+    </body>
+    <!--3. When we examine the page source code on Firefox we see this code.-->
+    <!--<h1></h1> delimit our title-->
+    <!--<p></p> delimit our paragrphs-->
+    <!--The red color is coded in our text with the generic tag <span style = "color:red"></span>.-->
+</html>
+
+<!-- exe 2 -->
+<!-- part 1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>International Cuisine</title>
+</head>
+<body>
+<h1><Au Menu></h1>
+<h2>Entrées</h2>
+<p>Soupe de légumes <br/>Salade aux fruits de mer</p>
+<h2>Plats</h2>
+<p>Couscous au poisson <br/>Côte de veauaux petits légumes</p>
+<h2>Dessert</h2>
+<p>Tiramisu<br/>Mousseau chocolat</p>
+</body>
+</html>
+<!-- 2.4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>International Cuisine</title>
+</head>
+<body>
+<h1>Au Menu</h1>
+<h2>Entrées</h2>
+<ul>
+    <li>Soupe de légumes</li>
+    <li>Salade aux fruits de mer</li>
+</ul>
+<h2>Plats</h2>
+<ul>
+    <li>Couscous au poisson</li>
+    <li>Côte de veauaux petits légumes</li>
+</ul>
+<h2>Dessert</h2>
+<ul>
+    <li>Tiramisu</li>
+    <li>Mousseau chocolat</li>
+</ul>
+</body>
+</html>
+
+<!-- exe 3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>International Cuisine</title>
+  	<style>
+      body {
+        background-color : yellow;
+        border : 10%;
+        width : 50%;
+      }
+      li {
+				border : 15%;
+      }
+      h1 {
+        text-align : center ;
+        font-size : 30 ;
+        font-family : "Open sans";
+        font-style : bold ;
+        color : blue ;
+      }
+      #seafood {
+        color : purple;
+      }
+      #fish {
+        color : purple;
+      }
+      .FirstLetter{
+      	font-style : italic ;
+        color : pink ;
+      }
+    </style>
+</head>
+<body id="body">
+<h1>Au Menu</h1>
+  <h2> <span class="FirstLetter">E</span>ntrées</h2>
+<ul>
+    <li>Soupe de légumes</li>
+  <li>Salade aux <span id="seafood">fruits de mer</span></li>
+</ul>
+<h2><span class="FirstLetter">P</span>lats</h2>
+<ul>
+  <li>Couscous au <span id="fish"> poisson </span> </li>
+    <li>Côte de veauaux petits légumes</li>
+</ul>
+<h2><span class="FirstLetter">D</span>essert</h2>
+<ul>
+    <li>Tiramisu</li>
+    <li>Mousseau chocolat</li>
+</ul>
+</body>
+</html>
+
+<!-- ex 4 -->
+  <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Hyperlinks and tables in HTML</title>
+		<style>
+
+			.backgcol{
+				background-color: rgb(176, 194, 255);
+			}
+			table {
+				border-collapse: collapse;
+				border: 2px solid red;
+			}
+			table th, table td {
+				border: 1px solid black;
+				padding: 4px 6px;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td class = "backgcol">&nbsp;</td>
+				<th>Recette</th>
+				<th>Prix</th>
+			</tr>
+			<tr>
+				<th class = "backgcol" rowspan="2">Entrée</th>
+				<td>Soupe de légumes</td>
+				<td>8 euros</td>
+			</tr>
+			<tr>
+				<td>Salade aux fruits de mer</td>
+				<td>9 euros</td>
+			</tr>
+			<tr>
+				<th class = "backgcol" rowspan="2">Plat</th>
+				<td>Couscous au poisson</td>
+				<td>14 euros</td>
+			</tr>
+			<tr>
+				<td>Côte de veau aux petits légumes</td>
+				<td>12 euros</td>
+			</tr>
+			<tr>
+				<th class = "backgcol" rowspan="2">Dessert</th>
+				<td>Tiramisu</td>
+				<td>6 euros</td>
+			</tr>
+			<tr>
+				<td>Mousse au chocolat</td>
+				<td>5 euros</td>
+			</tr>
+		</table>
+	</body>
+	<!-- We must replace all "Au Menu" by <a href= "price.html"-->
+</html>
+
+<!-- ex 5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styleTP1.css">
+</head>
+<header>
+  <h1>Au Menu</h1>
+</header>
+<body>
+    <div id="paragraphe">
+        <ol>
+            <li>
+                <h2>Entrées</h2>
+                <ul>
+                    <li>Soupe de légumes</li>
+                    <li>Salade aux fruits de mer</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Plats</h2>
+                <ul>
+                    <li>Couscous au poisson</li>
+                    <li>Côte de veauaux petits légumes</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Dessert</h2>
+                <ul>
+                    <li>Tiramisu</li>
+                    <li>Mousse au chocolat</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
+<!-- styleTP1.css
+#paragraphe{
+    color:#000000;
+    background-color:#ffffff;
+    border:3px solid #000000;
+    padding: 3px;
+    min-height:10em;
+    width:30em;
+}
+html
+{
+    background-color: #95ffc6;
+}
+-->
+
+<!-- ex 6 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styleTP1.css">
+  	<style>
+      #paragraphe{
+        color:#000000;
+        background-color:#ffffff;
+        border:3px solid #000000;
+        padding: 3px;
+        min-height:10em;
+        width:30em;
+      }
+			html{
+        	background-color: #95ffc6;
+      }
+      header {
+        width : auto;
+        background-color : pink;
+        border : 5px solid #000000;
+        border-radius : 10%;
+        margin : 1em;
+        box-shadow : 5px 2px 2px black;
+        justify-content : center;
+        display:flex;
+        flex-flow:row;
+      }
+      h1 {
+        text-align : center;
+        position : center;
+      }
+      img {
+        max-width : 10%;
+        height: auto;
+				margin : 5px;
+      }
+      </style>
+</head>
+<body>
+    <div id="paragraphe">
+        <ol>
+          <header>
+            <h1>Au Menu</h1>
+            <img src="logo_tdz_blak.png" id="logotdz"/>
+          </header>
+            <li>
+                <h2>Entrées</h2>
+                <ul>
+                    <li>Soupe de légumes</li>
+                    <li>Salade aux fruits de mer</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Plats</h2>
+                <ul>
+                    <li>Couscous au poisson</li>
+                    <li>Côte de veauaux petits légumes</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Dessert</h2>
+                <ul>
+                    <li>Tiramisu</li>
+                    <li>Mousse au chocolat</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
+<!-- styleTP1.css
+#paragraphe{
+    color:#000000;
+    background-color:#ffffff;
+    border:3px solid #000000;
+    padding: 3px;
+    min-height:10em;
+    width:30em;
+}
+html{
+    background-color: #95ffc6;
+}
+header {
+  	width : auto;
+  	background-color : pink;
+    border : 5px solid #000000;
+    border-radius : 10%;
+    margin : 1em;
+    box-shadow : 5px 2px 2px black;
+    justify-content : center;
+    display:flex;
+    flex-flow:row;
+}
+h1 {
+    text-align : center;
+    position : center;
+}
+img {
+   max-width : 10%;
+  	height: auto;
+		margin : 5px;
+}
+-->
+
+<!-- ex 7 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styleTP1.css">
+</head>
+<header>
+    <h1>Au Menu</h1>
+</header>
+<body>
+    <div id="paragraphe">
+        <ol>
+            <li>
+                <h2>Entrées</h2>
+                <ul class="sub">
+                    <li>Soupe de légumes</li>
+                    <li>Salade aux fruits de mer</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Plats</h2>
+                <ul class="sub">
+                    <li>Couscous au poisson</li>
+                    <li>Côte de veauaux petits légumes</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Dessert</h2>
+                <ul class="sub">
+                    <li>Tiramisu</li>
+                    <li>Mousse au chocolat</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
+<!-- styleTP1
+#paragraphe{
+    color:#000000;
+    background-color:#ffffff;
+    border:3px solid #000000;
+    padding: 3px;
+    min-height:10em;
+    width:70%;
+}
+html
+{
+    background-color: #95ffc6;
+}
+
+h2:hover{
+    color:grey;
+}
+.sub{
+    padding-right: 30px;
+    display: none;
+}
+h2:hover + .sub{
+    display: inline;
+}
+ul{
+    display: flex;
+    flex-flow: row;
+}
+-->
+
+<!-- ex 8 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styleTP1.css">
+</head>
+<header>
+    <h1>Au Menu</h1>
+</header>
+<body>
+    <div id="paragraphe">
+        <ol>
+            <li>
+                <h2>Entrées</h2>
+                <ul class="sub">
+                    <li>Soupe de légumes</li>
+                    <li>Salade aux fruits de mer</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Plats</h2>
+                <ul class="sub">
+                    <li>Couscous au poisson</li>
+                    <li>Côte de veauaux petits légumes</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Dessert</h2>
+                <ul class="sub">
+                    <li>Tiramisu</li>
+                    <li>Mousse au chocolat</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+<footer>
+    <p class="footerPara">90 avenue du colonel fabian <br/> tribe of zhou</p>
+</footer>
+</html>
+<!-- style css
+
+#paragraphe{
+    color:#000000;
+    background-color:#ffffff;
+    border:3px solid #000000;
+    padding: 3px;
+    min-height:10em;
+    width:70%;
+}
+html
+{
+    background-color: #95ffc6;
+}
+
+h2:hover{
+    color:grey;
+}
+.sub{
+    padding-right: 30px;
+    display: none;
+}
+h2:hover + .sub{
+    display: inline;
+}
+ul{
+    display: flex;
+    flex-flow: row;
+}
+footer{
+    background-color: slategray;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 3px;
+    width: 100%;
+}
+.footerPara {
+    color: aquamarine;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+}
+.footerPara:hover{
+    color: yellow;
+}
+-->

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>Lab2 Part1.1</title>
+    </head>
+    <body>
+        <header>
+            <h1>Contact details</h1>
+            <form action="/my-handling-form-page" method="post">
+                <div>
+                    <label for="last_name">Last Name:</label>
+                    <br>
+                    <input type="text" id="last_name" name="user_last_name">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="first_name">First name:</label>
+                    <br>
+                    <input type="text" id="first_name" name="user_first_name">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="adresse">Adresse:</label>
+                    <br>
+                    <input type="text" id="adresse" name="user_adresse" size="30">
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="checkbox" checked id="documentation" name="documentation">
+                    <label for="documentation">I would like to receive
+                        a documentation</label>
+                </div>
+
+                <br>
+
+                <div>
+                    <label>Country:</label>
+                    <br>
+                    <select>
+                        <optgroup label="Country">
+                            <option>Australia</option>
+                            <option>Canada</option>
+                            <option>China</option>
+                            <option>India</option>
+                            <option>Malaysia</option>
+                            <option>South Africa</option>
+                        </optgroup>
+
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label>Sexe</label>
+                    <input type="radio" checked id="male" name="user_sexe">
+                    <label for="male">Male</label>
+
+                    <input type="radio" checked id="female" name="user_sexe">
+                    <label for="female">Female</label>
+                </div>
+
+                <br>
+
+                <div>
+                    <h2>Activity</h2>
+                    <p>Multiple choices:</p>
+
+                    <input type="checkbox" checked id="computer" name="computer_activity">
+                    <label for="computer">Computer</label>
+
+                    <input type="checkbox" checked id="mechanical" name="mechanical_activity">
+                    <label for="mechanical">Mechanical</label>
+
+                    <input type="checkbox" checked id="electronic" name="electronic_activity">
+                    <label for="electronic">Electronic</label>
+
+                    <input type="checkbox" checked id="other" name="other_activity">
+                    <label for="other">Other</label>
+                </div>
+
+                <br>
+
+                <div>
+                    <button type="add">
+                        <strong>Add</strong>
+                    </button>
+
+                    <button type="remove">
+                        <strong>Remove</strong>
+                    </button>
+                </div>
+            </form>
+        </header>
+    </body>
+</html>

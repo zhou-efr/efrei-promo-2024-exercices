@@ -1,5 +1,11 @@
 package com.tdz.zhou;
 
+//import com.tdz.zhou.Integers0.Integers;
+//import com.tdz.zhou.Integers1.Integers;
+import com.tdz.zhou.Graphic.*;
+import com.tdz.zhou.Graphic2.Ellipse;
+import com.tdz.zhou.Graphic2.Rectangle;
+import com.tdz.zhou.Integers2.Integers;
 import com.tdz.zhou.geometry.Circle;
 import com.tdz.zhou.geometry.CircleBold;
 import com.tdz.zhou.zoo.Animal;
@@ -95,6 +101,95 @@ public class Main {
         System.out.println(c.toString());
     }
 
+    public static void display(int[] a) {
+        for (int i :
+                a) {
+            System.out.print(i + " ");
+        }
+        System.out.println("");
+    }
+
+    public static void test_integers0() {
+        Integers int1 = new Integers();
+
+        int1.add(1);
+        int1.add(2);
+        int1.add(3);
+        System.out.println("integer 1 = " + int1);
+
+        int[] tab = new int[Integers.five];
+        tab[0] = 20;
+        tab[1] = 30;
+        tab[2] = 40;
+        System.out.print("table : ");display(tab);
+
+        Integers int2 = new Integers(tab, 3);
+        System.out.println("integer 2 = " + int2);
+
+        tab[1] = -1;
+        System.out.print("table = ");display(tab);
+        System.out.println("integer 2 = " + int2);
+    }
+
+    public static void test_integers1() {
+        Integers int1 = new Integers();
+
+        int1.add(1);
+        int1.add(2);
+        int1.add(3);
+        System.out.println("integer 1 = " + int1);
+
+        int[] tab = new int[Integers.five];
+        tab[0] = 20;
+        tab[1] = 30;
+        tab[2] = 40;
+        System.out.print("table : ");display(tab);
+
+        Integers int2 = new Integers(tab, 3);
+        System.out.println("integer 2 = " + int2);
+
+        tab[1] = -1;
+        System.out.print("table = ");display(tab);
+        System.out.println("integer 2 = " + int2);
+    }
+
+    public static void test_integers2() {
+        Integers int1 = new Integers();
+
+        int1.add(1);
+        int1.add(2);
+        int1.add(3);
+        System.out.println("integer 1 = " + int1);
+
+        int[] tab = new int[Integers.five];
+        tab[0] = 20;
+        tab[1] = 30;
+        tab[2] = 40;
+        System.out.print("table : ");display(tab);
+
+        Integers int2 = new Integers(tab, 3);
+        System.out.println("integer 2 = " + int2);
+
+        tab[1] = -1;
+        System.out.print("table = ");display(tab);
+        System.out.println("integer 2 = " + int2);
+    }
+
+    public static void use(){
+
+    }
+
+    public static void TestShapes(){
+        Ellipse e1 = new Ellipse(2, 1);
+        e1.description();
+
+        Ellipse e2 = new Ellipse(4, 1);
+        e2.description();
+
+        Rectangle r1 = new Rectangle(2, 1);
+        r1.description();
+    }
+
     public static void main(String[] args) {
 //        test_point();
 //        System.out.println("--------------");
@@ -103,6 +198,9 @@ public class Main {
 //        test_Vehicle();
 //        test_Animal();
 //        test_Circle();
-        test_Circle_Bold();
+//        test_Circle_Bold();
+//        test_integers0();
+//        use();
+        TestShapes();
     }
 }

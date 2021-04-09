@@ -1,0 +1,114 @@
+header {
+    position: sticky;
+    top: 10px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 10px;
+    display : flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content : center;
+}
+
+.logo
+{
+    width: 100px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.75rem yellow);
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    width: 75%;
+    margin-left: 12.5%;
+    overflow: scroll;
+}
+
+p {
+    text-indent: 20px;
+    color: lightgrey;
+    text-align: justify;
+    font-family: Open Sans;
+}
+
+label {
+    color : white;
+    margin-left: 10px;
+    font-family: Open Sans;
+}
+
+.buttons {
+    display : flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+select {
+    background-color: lightgrey;
+    border: none;
+    padding: 2px;
+}
+
+button {
+    margin: 10px;
+    text-transform: uppercase;
+    border: none;
+    background-color: lightgrey;
+    box-shadow: 1px 1px 2px whitesmoke;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+button:active {
+    background-color: grey;
+}
+
+.formbutton {
+    margin-top: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px white;
+    padding : 10px;
+    background-color: black;
+    max-width: 1000px;
+}
+
+input {
+    background-color: black;
+    border: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid lightgrey;
+    color: whitesmoke;
+}
+
+.input-item {
+    margin: 5px;
+}
+
+input::placeholder {
+    color: lightgrey;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:invalid {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    caret-color: orangered;
+    border-bottom: 1px solid orangered;
+}

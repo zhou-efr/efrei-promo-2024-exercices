@@ -1,0 +1,3 @@
+C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/CMakeFiles/main.c.dir
+C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/thepa/Code/C/efrei-promo-2024-exercices/Semestre 2 - C - WIP/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,63 @@
+<!-- ex 4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Hyperlinks and tables in HTML</title>
+    <style>
+
+        .backgcol{
+            background-color: rgb(176, 194, 255);
+        }
+        table {
+            border-collapse: collapse;
+            border: 2px solid red;
+            margin-left: 35%;
+        }
+        table th, table td {
+            border: 1px solid black;
+            padding: 6px 8px;
+        }
+        .price{
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td class = "backgcol">&nbsp;</td>
+        <th>Recette</th>
+        <th class="price">Prix</th>
+    </tr>
+    <tr>
+        <th class = "backgcol" rowspan="2">Entrée</th>
+        <td>Soupe de légumes</td>
+        <td class="price">8 euros</td>
+    </tr>
+    <tr>
+        <td>Salade aux fruits de mer</td>
+        <td class="price">9 euros</td>
+    </tr>
+    <tr>
+        <th class = "backgcol" rowspan="2">Plat</th>
+        <td>Couscous au poisson</td>
+        <td class="price">14 euros</td>
+    </tr>
+    <tr>
+        <td>Côte de veau aux petits légumes</td>
+        <td class="price">12 euros</td>
+    </tr>
+    <tr>
+        <th class = "backgcol" rowspan="2">Dessert</th>
+        <td>Tiramisu</td>
+        <td class="price">6 euros</td>
+    </tr>
+    <tr>
+        <td>Mousse au chocolat</td>
+        <td class="price">5 euros</td>
+    </tr>
+</table>
+</body>
+<!-- We must replace all "Au Menu" by <a href= "price.html"-->
+</html>
