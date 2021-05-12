@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicewidth">
+    <link href="css/style.css" rel="stylesheet">
+    <title>la tribu des zhou</title>
+</head>
+<body>
+    <header>
+        <img src="src/logo_tdz_white_back_black.png" alt="logo of the zhou tribe aka the best team you can ever meet, actually while you don't ask to present their projects :wink:" class="logo"/>
+        <div class="formbutton" id="formbutton">
+            <form action="/my-handling-form-page" method="post">
+                <div class="input-item">
+                    <label for="fname"> First Name :</label>
+                    <input class="text-input" type="text" required placeholder="Panda" id="fname" name="user_fname">
+                </div>
+                <div class="input-item">
+                    <label for="lname"> Last Name :</label>
+                    <input class="text-input" type="text" required placeholder="Panda" id="lname" name="user_lname">
+                </div>
+                <div class="input-item">
+                    <label for="mail">e-mail:</label>
+                    <input class="email-input" type="email" required placeholder="panda@efrei.net" id="mail" name="user_mail">
+                </div>
+                <div class="input-item">
+                    <label for="role">Role :</label>
+                    <select id="role" name="role">
+                      <option value="student">Student</option>
+                      <option value="teacher">Teacher</option>
+                    </select>
+                </div>
+            </form>
+            <div class="buttons">
+                <div class="button">
+                    <button type="submit" id="add"> Add (10) </button>
+                </div>
+                <div class="button">
+                    <button type="reset" id="reset"> Remove all </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <button id="barrel_roll">do a barrel roll</button>
+    <main class="mainContent" id="mainContent">
+        <table id="listOfNameWhatALongIdForUHugo">
+            <tr id="legend">
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Email</td>
+                <td>Role</td>
+            </tr>
+        </table>
+    </main>
+</body>
+<footer>
+    <script src="js/script.js"></script>
+    <p>
+        as said before, you will find the details of the modifications on the following repository:
+        <a href="https://github.com/zhou-efr/web-programming">https://github.com/zhou-efr/web-programming</a>
+    </p>
+</footer>
+</html>
