@@ -8,6 +8,10 @@ public class Rectangle extends Shape{
         this.length = length;
         this.width = width;
     }
+    public Rectangle() {
+        this.length = 0;
+        this.width = 0;
+    }
 
     @Override
     public double perimeter() {
@@ -17,5 +21,9 @@ public class Rectangle extends Shape{
     @Override
     public double surface() {
         return 0;
+    }
+
+    public static String description(){
+        return "";
     }
 }

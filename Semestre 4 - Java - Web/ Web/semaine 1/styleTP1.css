@@ -62,3 +62,25 @@ footer{
 .footerPara:hover{
     color: yellow;
 }
+
+
+/*#formulaire{
+    margin-right: 20px;
+}
+
+tr:last-child{
+    border: none;
+}
+
+tr{
+    border-bottom: 1px solid black;
+}
+
+#tableau{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td{
+    padding-bottom: 10px;
+}*/

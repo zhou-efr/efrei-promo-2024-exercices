@@ -2,7 +2,7 @@ package com.tdz.zhou.Graphic;
 
 public class Circle extends GraphicObject{
     private int radius;
-    
+
     public Circle(final ZColor color, final int x, final int y, final int thickness,
                   final int radius){
         super(color, x, y, thickness);

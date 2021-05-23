@@ -189,7 +189,7 @@ public class Main {
         Rectangle r1 = new Rectangle(2, 1);
         r1.description();
     }
-
+    private static int nomre = 0;
     public static void main(String[] args) {
 //        test_point();
 //        System.out.println("--------------");
