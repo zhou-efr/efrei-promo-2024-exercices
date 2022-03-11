@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tribu.zhou.lab4.AccountTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-03-11T11:13:18" hostname="ZHOU" time="0.034">
+  <properties/>
+  <testcase name="setBalance()" classname="com.tribu.zhou.lab4.AccountTest" time="0.023"/>
+  <testcase name="withdraw()" classname="com.tribu.zhou.lab4.AccountTest" time="0.001"/>
+  <testcase name="setId()" classname="com.tribu.zhou.lab4.AccountTest" time="0.001"/>
+  <testcase name="monthlyInterests()" classname="com.tribu.zhou.lab4.AccountTest" time="0.001"/>
+  <testcase name="createAccount()" classname="com.tribu.zhou.lab4.AccountTest" time="0.001"/>
+  <testcase name="setAnnualInterestRate()" classname="com.tribu.zhou.lab4.AccountTest" time="0.001"/>
+  <testcase name="deposit()" classname="com.tribu.zhou.lab4.AccountTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
