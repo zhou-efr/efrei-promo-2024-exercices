@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 3.21)
-project(OS)
+project(OS C)
 
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_C_STANDARD 11)
+
+include_directories(.)
+include_directories(src)
 
 add_executable(OS
-        src/SJF.cpp src/SJF.h src/FCFS.cpp src/FCFS.h src/Main.cpp)
+        src/Main.c src/prof/SJF.c src/prof/SJF.h src/prof/FCFS.c src/prof/FCFS.h src/prof/MultiProgrammingWithFixedTask.c src/prof/MultiProgrammingWithFixedTask.h src/prof/MVT.c src/prof/MVT.h src/prof/MVVT.c src/prof/MVVT.h)
