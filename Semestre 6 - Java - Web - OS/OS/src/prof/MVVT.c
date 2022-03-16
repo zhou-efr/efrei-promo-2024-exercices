@@ -19,6 +19,9 @@ void MVVT()
     {
         sa[i]=(int*)malloc(sizeof(int));
         printf("page%d\t address %u\n",i+1,sa[i]);
+    }
+    for(i=0;i<np;i++)
+    {
         free(sa[i]);
     }
     getch();
