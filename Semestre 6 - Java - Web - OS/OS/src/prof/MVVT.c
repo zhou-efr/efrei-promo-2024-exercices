@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-void MVVT()
+void pagging()
 {
     int np,ps,i;
     int **sa;
