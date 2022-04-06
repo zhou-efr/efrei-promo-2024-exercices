@@ -32,17 +32,8 @@ Main proc
     int 21h
 
     ; Read String from keyboard using DOS interrupt 21h
-    mov ah,1 ; call DOS to read a key
+    mov ah,0Ah ; Interrupt 21h/Function 0Ah (DOS)
     int 21h ; from keyboard, store in AL
-    mov bl,al ; save character in BL
-
-    mov dl, 10 ; ascii new line
-    mov ah, 02h
-    int 21h
-
-    mov dl, bl
-    mov ah, 02h
-    int 21h
     
     mov ah,4ch
     int 21h
