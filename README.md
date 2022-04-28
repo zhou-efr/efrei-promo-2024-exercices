@@ -39,6 +39,7 @@ ZHOU Killian <br />
 LEBIHAN Guerric <br/>
 LESIEUX Benjamin <br />
 SAUVEE Kylian <br />
+GitHub Copilot <br />
 
 18/01/2021
 
