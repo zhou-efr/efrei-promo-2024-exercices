@@ -57,4 +57,8 @@ public class Lab8Ex1 extends JFrame implements ActionListener {
             this.getContentPane().setBackground(Color.GREEN);
         }
     }
+
+    public static void main(String[] args) {
+        new Lab8Ex1();
+    }
 }

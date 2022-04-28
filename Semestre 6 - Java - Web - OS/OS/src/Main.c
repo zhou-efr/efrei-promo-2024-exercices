@@ -17,8 +17,8 @@ int main(){
 //    MPWFT();
 //    MVT();
 //    pagging();
-//    LRU();
+    LRU();
 //    deadlockAvoidance();
-    indexedFileAllocation();
+//    indexedFileAllocation();
     return 0;
 }

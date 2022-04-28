@@ -13,8 +13,9 @@ Main proc
 ;   lea dx,msg
     int 21h
 
-    mov ah,4ch
-    int 21h
+    mov ah, 4ch         ; DOS: terminate program
+    mov al, 0           ; return code 0
+    int 21h             ; syscall
 
 Main endp
 End main

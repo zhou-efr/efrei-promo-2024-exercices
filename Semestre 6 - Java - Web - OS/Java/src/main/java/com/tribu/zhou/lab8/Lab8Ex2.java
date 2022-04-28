@@ -184,4 +184,8 @@ public class Lab8Ex2 extends JFrame implements ActionListener {
                 break;
         }
     }
+
+    public static void main(String[] args) {
+        new Lab8Ex2();
+    }
 }

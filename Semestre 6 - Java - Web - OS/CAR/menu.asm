@@ -64,8 +64,9 @@ Main proc
     mov ah,1 ; call DOS to read a key
     int 21h ; from keyboard, store in AL
     
-    mov ah,4ch
-    int 21h
+    mov ah, 4ch         ; DOS: terminate program
+    mov al, 0           ; return code 0
+    int 21h             ; syscall
 
 Main endp
 End main

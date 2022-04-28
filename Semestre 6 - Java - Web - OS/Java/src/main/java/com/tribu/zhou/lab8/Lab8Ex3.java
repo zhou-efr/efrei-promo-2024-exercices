@@ -42,4 +42,8 @@ public class Lab8Ex3 extends JFrame {
         setSize(300, 300);
         setVisible(true);
     }
+
+    public static void main(String[] args) {
+        new Lab8Ex3();
+    }
 }
