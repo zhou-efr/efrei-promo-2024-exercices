@@ -20,7 +20,7 @@
             </thead>
             <tbody>
             <?php
-            include "../db/conn.php";
+            include "./db/conn.php";
             $sql = "SELECT * FROM contacts";
             $result = mysqli_query($conn, $sql);
             if (mysqli_num_rows($result) > 0) {
@@ -30,7 +30,7 @@
                     echo "<td class='border px-4 py-2'>" . $row['email'] . "</td>";
                     echo "<td class='border px-4 py-2'>" . $row['phoneNumber'] . "</td>";
                     echo "<td class='border px-4 py-2'>" . $row['address'] . "</td>";
-                    echo "<td class='border px-4 py-2'><a href='edit.php?id=" . $row['id'] . "'>Edit</a> | <a href='delete.php?id=" . $row['id'] . "'>Delete</a></td>";
+                    echo "<td class='border px-4 py-2'><a href='edit.php?id=" . $row['id'] . "'>Edit</a> | <a href='./db/delete.php?id=" . $row['id'] . "'>Delete</a></td>";
                     echo "</tr>";
                 }
             }

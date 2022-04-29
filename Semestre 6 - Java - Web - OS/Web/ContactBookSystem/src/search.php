@@ -9,11 +9,11 @@
 <div class="flex flex-col justify-center items-center gap-4">
     <h1 class="text-4xl font-bold">Search</h1>
     <form action="search.php" method="post">
-        <input type="text" name="search" placeholder="Search">
-        <input type="submit">
+        <input type="text" name="search" placeholder="Search" class="appearance-none bg-gray-200 text-gray-700 border border-gray-200 rounded-lg py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+        <input type="submit" value="submit" class="hover:bg-gray-300 px-4 py-2 rounded-lg font-medium bg-gray-200 border-gray-400">
     </form>
     <?php
-    include "../db/conn.php";
+    include "./db/conn.php";
     $search_key = $_POST['search'] ?? '';
 
     if ($search_key == ''){
